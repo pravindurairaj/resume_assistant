@@ -1,0 +1,77 @@
+# ============================================================
+# resume-workspace .gitignore
+# ============================================================
+# Personal data, secrets, and generated output are excluded.
+# Templates, skills, scripts, and agent configs are committed.
+# ============================================================
+
+# ── Python ─────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ── Generated resume output (.docx) ────────────────────────
+# All tailored .docx files — these contain personal data
+*.docx
+
+# ── Personal PII: career profiles ──────────────────────────
+# These contain real phone/email/LinkedIn — each user keeps their
+# own copy locally. A template is committed at:
+#   .github/instructions/career-profile-template.instructions.md
+.github/instructions/career-profile-*.instructions.md
+.claude/instructions/career-profile-*.instructions.md
+# Exception: keep the template
+!.github/instructions/career-profile-template.instructions.md
+!.claude/instructions/career-profile-template.instructions.md
+
+# ── Personal PII: master resumes ───────────────────────────
+# Master .md/.tex resume files live under Users/{Name}/ and are
+# personal. Users store them locally; they are gitignored.
+.github/Users/*/
+.claude/Users/*/
+# Exception: keep the .gitkeep placeholder and any ExampleUser
+!.github/Users/.gitkeep
+!.github/Users/ExampleUser/
+!.claude/Users/.gitkeep
+!.claude/Users/ExampleUser/
+
+# ── User output folders ─────────────────────────────────────
+# {UserName}/Resumes/, History/, JobSearch/ contain personal output.
+# Top-level user folders are kept (via .gitkeep), content excluded.
+Pravin/Resumes/
+Pravin/History/
+Navya/Resumes/
+Navya/History/
+
+# ── Job search data ─────────────────────────────────────────
+# Scraped Excel files and batch manifests — user-specific
+*/JobSearch/*.xlsx
+*/JobSearch/*.json
+*/JobSearch/archive/
+
+# Keep JobSearch/ dir structure
+!*/JobSearch/.gitkeep
+
+# ── Temporary / scratch files ───────────────────────────────
+tmp*.docx
+tmp*.md
+tmp*.tex
+*.tmp
+
+# ── Third-party generated output ────────────────────────────
+graphify-out/
+
+# ── IDE / OS ─────────────────────────────────────────────────
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ────────────────────────────────────────────────────
+*.log

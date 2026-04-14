@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Subsection formatting
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{4pt}
+
+% Tight lists
+\setlist[itemize]{nosep, left=0pt..1.5em, label=\textbullet}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+    {\LARGE\bfseries FULL NAME} \\[4pt]
+    City, State \enspace|\enspace Phone \enspace|\enspace Email \enspace|\enspace \href{https://linkedin.com/in/yourprofile}{LinkedIn}
+\end{center}
+
+% ===== SUMMARY =====
+\section{Professional Summary}
+2--3 sentences tailored to the target role. Incorporate top JD keywords naturally. Highlight years of experience, core domain, and key value proposition.
+
+% ===== SKILLS =====
+\section{Skills}
+\textbf{Category 1:} Skill 1, Skill 2, Skill 3 \\
+\textbf{Category 2:} Skill 1, Skill 2 \\
+\textbf{Category 3:} Skill 1, Skill 2 \\
+\textbf{Category 4:} Skill 1, Skill 2
+
+% ===== EXPERIENCE =====
+\section{Work Experience}
+
+\textbf{Job Title} \hfill \textbf{MMM YYYY -- Present} \\
+\textit{Company Name} \hfill \textit{City, State}
+\begin{itemize}
+    \item Action verb + what you did + with what technology + measurable result
+    \item Bullet 2
+    \item Bullet 3
+\end{itemize}
+
+\textbf{Job Title} \hfill \textbf{MMM YYYY -- MMM YYYY} \\
+\textit{Company Name} \hfill \textit{City, State}
+\begin{itemize}
+    \item Bullet 1
+    \item Bullet 2
+    \item Bullet 3
+\end{itemize}
+
+% ===== PROJECTS =====
+\section{Projects}
+
+\textbf{Project Name} --- Technologies: X, Y, Z
+\begin{itemize}
+    \item Key accomplishment or feature
+    \item Key accomplishment or feature
+\end{itemize}
+
+% ===== EDUCATION =====
+\section{Education}
+
+\textbf{Degree in Major} \hfill \textbf{Graduation Year} \\
+\textit{University Name} \hfill \textit{City, State}
+
+% ===== CERTIFICATIONS =====
+\section{Certifications}
+\begin{itemize}
+    \item Certification Name --- Issuing Organization, Year
+    \item Certification Name --- Issuing Organization, Year
+\end{itemize}
+
+\end{document}

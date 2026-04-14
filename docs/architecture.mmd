@@ -1,0 +1,47 @@
+flowchart TD
+    A["👤 /resume-tailor invoked"] --> B{{"🔍 User name provided?"}}
+    B -- "❌ No" --> C["📋 List subfolders in .github/Users/<br/>📢 Prompt: 'Available users: 1. Pravin 2. ...<br/>Which user and which job?'"]
+    B -- "✅ Yes" --> D["🔎 Search .github/Users/ for match<br/>(case-insensitive, partial OK)"]
+    
+    C --> D
+    D --> E{{"✅ Match found?"}}
+    E -- "❌ No" --> F["⚠️ Error: No resume found for '{name}'<br/>📋 List available users<br/>💡 Suggest: Use /convert-resume to add new"]
+    E -- "✅ Yes" --> G["📄 Load master resume:<br/>.github/Users/{Name}/{Name}_Resume.md"]
+    
+    G --> H{{"📋 JD provided?"}}
+    H -- "❌ No" --> I["❓ Ask user to paste/attach JD"]
+    H -- "✅ Yes" --> J["🏢 Parse JD → extract Company + Role<br/>📊 Extract required/preferred skills"]
+    I --> J
+    
+    J --> K["🎯 Build Skill Matching Matrix<br/>✅ Only include real candidate skills<br/>❌ Never fabricate abilities"]
+    
+    K --> L["📝 Generate tailored .md resume<br/>• JD keywords in summary/bullets<br/>• Trimmed skills section<br/>• ATS-friendly formatting"]
+    
+    L --> M["💾 Save .md →<br/>.github/Users/{Name}/{Name}_Resume_{Company}.md"]
+    
+    M --> N["🏢 Determine output folder name:<br/>🥇 Company if identifiable<br/>🥈 Role title as fallback"]
+    
+    N --> O{{"📁 {Name}/ folder exists in CWD?"}}
+    O -- "❌ No" --> P["📂 Create {Name}/ folder"]
+    O -- "✅ Yes" --> Q{{"📁 {Company|Role}/ subfolder exists?"}}
+    
+    P --> Q
+    Q -- "❌ No" --> R["📂 Create {Name}/{Company|Role}/ subfolder"]
+    Q -- "✅ Yes" --> S["📁 Use existing subfolder"]
+    
+    R --> T["🔄 Run md-to-docx.py script<br/>💾 Save .docx →<br/>{Name}/{Company|Role}/{Name}_Resume_{Company}.docx"]
+    S --> T
+    
+    T --> U["✅ Report to user:<br/>📊 Match score (X/Y required matched)<br/>📄 Markdown path: .github/Users/{Name}/...md<br/>📄 Word doc path: {Name}/{Company|Role}/...docx<br/>🔧 Iteration options: adjust summary, reorder bullets, add/remove sections"]
+
+    classDef startEnd fill:#e1f5fe
+    classDef process fill:#f3e5f5
+    classDef decision fill:#fff3e0
+    classDef success fill:#e8f5e8
+    classDef error fill:#ffebee
+    
+    class A,U startEnd
+    class G,J,K,L,M,N,P,R,T process
+    class B,E,H,O,Q decision
+    class S success
+    class F error
