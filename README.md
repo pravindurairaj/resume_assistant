@@ -29,24 +29,26 @@ Works with **GitHub Copilot**, **Claude Code**, **Cursor**, **OpenAI Codex agent
 
 ## Setup
 
-### 1. Create and activate a virtual environment
+### 1. Create and activate the virtual environment
+
+The venv is named **`resume_assistant`**.
 
 **Windows (PowerShell):**
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+python -m venv resume_assistant
+.\resume_assistant\Scripts\Activate.ps1
 ```
 
 **Windows (cmd):**
 ```cmd
-python -m venv .venv
-.venv\Scripts\activate.bat
+python -m venv resume_assistant
+resume_assistant\Scripts\activate.bat
 ```
 
 **macOS / Linux (bash):**
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv resume_assistant
+source resume_assistant/bin/activate
 ```
 
 ### 2. Install dependencies
@@ -65,7 +67,24 @@ Dependencies installed:
 | `beautifulsoup4` | Parse LinkedIn HTML job listings |
 | `openpyxl` | Read/write Excel job tracking files |
 
-### 3. Add your career profile
+### 3. Bootstrap user directories from `.docx` files
+
+Place `{Name}_Resume.docx` files in the **project root**, then run:
+
+```bash
+python setup-users.py                 # process all *_Resume.docx in root
+python setup-users.py Pravin Navya    # specific users only
+```
+
+This script:
+- Extracts Markdown from each `.docx` using `markitdown`
+- Writes/updates `.github/Users/{Name}/{Name}_Resume.md` and `.claude/Users/{Name}/{Name}_Resume.md`
+- Creates output folders: `{Name}/Resumes/`, `{Name}/JobSearch/archive/`, `{Name}/History/`
+- **Safe to re-run** — updates existing files, creates missing ones
+
+> `setup-users.py` reuses extraction logic from `extract-resume.py` (DRY via `importlib`).
+
+### 5. Add your career profile
 
 Copy the template and fill in your details (this file is gitignored — it contains PII):
 
@@ -101,7 +120,7 @@ cp .claude/instructions/career-profile-template.instructions.md \
 
 Fill in: `{Full Name}`, `{Email}`, `{Phone}`, `{LinkedIn}`, `{Location}`, `Target Roles`, `Target Industries`.
 
-### 4. Add your master resume
+### 6. Add your master resume
 
 Place your full resume (all skills, full history) at:
 
@@ -527,28 +546,11 @@ python .github/skills/resume-tailor/scripts/tailor-resume.py \
 
 ### Adding a new user
 
-1. Create `.github/instructions/career-profile-{Name}.instructions.md` (copy an existing profile as template)
-2. Add master resume at `.github/Users/{Name}/{Name}_Resume.md`
-3. Create output folders:
-
-   **Windows (PowerShell):**
-   ```powershell
-   New-Item -ItemType Directory -Path "{Name}\JobSearch\archive", "{Name}\Resumes", "{Name}\History"
-   ```
-
-   **Windows (cmd):**
-   ```cmd
-   mkdir {Name}\JobSearch\archive
-   mkdir {Name}\Resumes
-   mkdir {Name}\History
-   ```
-
-   **macOS / Linux (bash):**
-   ```bash
-   mkdir -p {Name}/JobSearch/archive {Name}/Resumes {Name}/History
-   ```
-
-4. The user is immediately available as `--user {Name}` for both skills
+1. Place `{Name}_Resume.docx` in the **project root**
+2. Run `python setup-users.py {Name}` — this creates all directories and extracts the resume Markdown
+3. Create `.github/instructions/career-profile-{Name}.instructions.md` (copy the template and fill in your details)
+4. Mirror career profile to `.claude/instructions/career-profile-{Name}.instructions.md`
+5. The user is immediately available as `--user {Name}` for both skills
 
 ---
 
@@ -563,3 +565,45 @@ python .github/skills/resume-tailor/scripts/tailor-resume.py \
 | `.github/Users/{User}/companies/{Company}.md` | tailor-resume | Per-job context: JD + keyword match report |
 | `{User}/Resumes/{Company}/{User}_Resume_{Company}.docx` | tailor-resume / batch-pipeline | Final formatted Word document |
 | `{User}/History/resumes_created.xlsx` | log-application | Log of all tailored applications |
+
+---
+
+## Claude Code Usage Guide
+
+This workspace is optimised for Claude Code. Key workflows:
+
+### Effective Prompts
+
+```text
+# Tailor a single resume
+/resume-tailor Pravin <paste full job description>
+
+# Batch process all jobs ≥75% fit
+/resume-tailor auto-batch Pravin --min-fit 75
+
+# Scrape today's jobs
+/job-scraper Pravin
+
+# Full pipeline: scrape → batch → log
+@job-search-agent Pravin full
+```
+
+### Working with Claude Code
+
+- **Explore → Plan → Implement**: for any change touching multiple scripts, start in Plan Mode
+- **Verify outputs**: always check that `.md` and `.docx` files were created before marking complete
+- **Context management**: run `/clear` between unrelated tasks (e.g., after scraping, before tailoring)
+- **Subagents**: delegate codebase investigations to subagents to protect main context window
+
+### CLAUDE.md Best Practices Applied
+
+Following [Claude Code best practices](https://code.claude.com/docs/en/best-practices):
+
+| Practice | Applied How |
+|----------|------------|
+| Short CLAUDE.md | Only ATS rules + commands; full docs here in README |
+| Skills with SKILL.md | `.claude/skills/*/SKILL.md` — invoked via `/skill-name` |
+| Agents | `.claude/agents/job-search.agent.md` — full pipeline |
+| Context files | `.github/context/` and `.claude/context/` — updated each session |
+| Hooks | Add via `.claude/settings.json` for deterministic actions |
+| Verification | Scripts output clear success/failure; check output files |

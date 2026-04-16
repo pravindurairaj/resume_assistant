@@ -7,6 +7,7 @@
 
 # ── Python ─────────────────────────────────────────────────
 .venv/
+resume_assistant/
 __pycache__/
 *.pyc
 *.pyo

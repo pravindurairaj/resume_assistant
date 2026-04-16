@@ -62,19 +62,21 @@ resume-workspace/
 ## Key Commands
 
 ```bash
+# Bootstrap user from .docx at project root
+resume_assistant/Scripts/python setup-users.py {Name}
 
 # Scrape LinkedIn jobs
-python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py --user {Name}
+resume_assistant/Scripts/python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py --user {Name}
 
 # Generate batch manifest
-python .github/skills/resume-tailor/scripts/batch-job-reader.py --user {Name} --min-fit 50
+resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/batch-job-reader.py --user {Name} --min-fit 50
 
 # Autonomous batch tailoring
-python .github/skills/resume-tailor/scripts/batch-pipeline.py \
+resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/batch-pipeline.py \
   --manifest {Name}/JobSearch/batch_manifest_{ts}.json
 
 # Convert .md → .docx
-python .github/skills/resume-tailor/scripts/md-to-docx.py \
+resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/md-to-docx.py \
   ".github/Users/{Name}/{Name}_Resume_{Co}.md" "{Name}/Resumes/{Co}" "{Full Name}"
 ```
 
@@ -90,12 +92,17 @@ python .github/skills/resume-tailor/scripts/md-to-docx.py \
 
 ## Python Environment
 
+The venv is named **`resume_assistant`** (not `.venv`).
+
 ```bash
-# Activate venv (Windows)
-.venv\Scripts\activate
+# Activate venv (Windows PowerShell)
+.\resume_assistant\Scripts\Activate.ps1
 
 # Activate venv (macOS / Linux)
-source .venv/bin/activate
+source resume_assistant/bin/activate
+
+# Run scripts directly without activating
+resume_assistant/Scripts/python <script.py>
 
 # Install deps
 pip install -r requirements.txt

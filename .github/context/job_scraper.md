@@ -80,7 +80,16 @@ python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py \
 
 ## Session History
 
-### v2 — 2026-04-10 (current)
+### v3 — 2026-04-16 (current)
+
+| Change | Detail |
+|--------|--------|
+| Venv renamed | `.venv` → `resume_assistant` — update all run commands to use `resume_assistant/Scripts/python` |
+| README updated | Setup steps renumbered; `setup-users.py` step added before career profile step |
+| CLAUDE.md | Updated key commands to reference `resume_assistant/Scripts/python` |
+| No script changes | Scraper logic unchanged; only docs + venv reference updated |
+
+### v2 — 2026-04-10 (previous)
 
 | Change | Detail |
 |--------|--------|

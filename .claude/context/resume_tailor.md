@@ -81,6 +81,26 @@ The resume-tailor skill creates ATS-friendly, JD-tailored resumes from stored ma
 
 ## Session History
 
+### 2026-04-16 — v3 Updates (Setup & Onboarding)
+
+| Change | Detail |
+|--------|--------|
+| `setup-users.py` added | Root-level script; auto-discovers `*_Resume.docx`, extracts via `importlib` reuse of `extract-resume.py`'s `extract()`, writes to both `.github/Users` and `.claude/Users`, creates output dirs |
+| Venv renamed | `.venv` → `resume_assistant` (project-specific name for clarity) |
+| Users bootstrapped | Pravin and Navya resumes extracted from `.docx` to `.md` in both `.github/Users/` and `.claude/Users/` |
+| CLAUDE.md trimmed | Follows CC best practices — short, imports README via `@README.md`, only includes non-inferable context |
+| README.md updated | Step 3 (setup-users.py), step numbering fixed, best practices section added, "Adding a new user" simplified |
+| `.gitignore` updated | Added `resume_assistant/` venv entry |
+| Output dirs created | `Navya/Resumes/`, `Navya/History/`, `Pravin/Resumes/`, `Pravin/History/` created with `.gitkeep` |
+
+### Known Issues (v3)
+
+| Issue | Status |
+|-------|--------|
+| Navya career profile | Template only — fill in real details for `career-profile-navya.instructions.md` |
+| Pravin career profile | Template only — fill in real details for `career-profile-pravin.instructions.md` |
+| `.github/Users/Pravin/Pravin_Resume.md` was a directory | Fixed — removed, re-extracted from docx correctly |
+
 ### 2026-04-10 — v2 Updates
 
 | Change | Detail |
