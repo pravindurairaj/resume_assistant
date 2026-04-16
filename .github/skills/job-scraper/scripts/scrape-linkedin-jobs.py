@@ -26,8 +26,11 @@ import argparse
 import re
 import sys
 import time
+import urllib3
 from datetime import datetime
 from pathlib import Path
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 # ── Dependency check ──────────────────────────────────────────────────────────
@@ -178,12 +181,12 @@ def scrape_linkedin_jobs(keywords, location, date_posted="day", max_results=100)
             params["f_TPR"] = time_filter
 
         try:
-            resp = requests.get(url, params=params, headers=headers, timeout=15)
+            resp = requests.get(url, params=params, headers=headers, timeout=15, verify=False)
 
             if resp.status_code == 429:
                 print(f"  Rate limited (429). Waiting 30s before retrying...")
                 time.sleep(30)
-                resp = requests.get(url, params=params, headers=headers, timeout=15)
+                resp = requests.get(url, params=params, headers=headers, timeout=15, verify=False)
 
             if resp.status_code != 200:
                 print(f"  Page {start // 25 + 1}: HTTP {resp.status_code} — stopping.")
@@ -260,12 +263,12 @@ def scrape_job_description(job_link):
     }
 
     try:
-        resp = requests.get(url, headers=headers, timeout=15)
+        resp = requests.get(url, headers=headers, timeout=15, verify=False)
 
         if resp.status_code == 429:
             print("    Rate limited (429). Waiting 30s...")
             time.sleep(30)
-            resp = requests.get(url, headers=headers, timeout=15)
+            resp = requests.get(url, headers=headers, timeout=15, verify=False)
 
         if resp.status_code != 200:
             return "", False
