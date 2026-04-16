@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp .github/context/resume_tailor.md .claude/context/resume_tailor.md)",
+      "Bash(cp .github/context/job_scraper.md .claude/context/job_scraper.md)"
+    ]
+  }
+}
