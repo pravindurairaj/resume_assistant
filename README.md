@@ -31,14 +31,27 @@ Works with **GitHub Copilot**, **Claude Code**, **Cursor**, **OpenAI Codex agent
 
 ### 1. Create and activate a virtual environment
 
+**Windows (PowerShell):**
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
+**Windows (cmd):**
+```cmd
+python -m venv .venv
+.venv\Scripts\activate.bat
+```
+
+**macOS / Linux (bash):**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
 ### 2. Install dependencies
 
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
@@ -56,6 +69,7 @@ Dependencies installed:
 
 Copy the template and fill in your details (this file is gitignored — it contains PII):
 
+**Windows (PowerShell):**
 ```powershell
 Copy-Item ".github\instructions\career-profile-template.instructions.md" `
   ".github\instructions\career-profile-{YourName}.instructions.md"
@@ -63,6 +77,26 @@ Copy-Item ".github\instructions\career-profile-template.instructions.md" `
 # Also mirror for Claude Code
 Copy-Item ".claude\instructions\career-profile-template.instructions.md" `
   ".claude\instructions\career-profile-{YourName}.instructions.md"
+```
+
+**Windows (cmd):**
+```cmd
+copy ".github\instructions\career-profile-template.instructions.md" ^
+  ".github\instructions\career-profile-{YourName}.instructions.md"
+
+REM Also mirror for Claude Code
+copy ".claude\instructions\career-profile-template.instructions.md" ^
+  ".claude\instructions\career-profile-{YourName}.instructions.md"
+```
+
+**macOS / Linux (bash):**
+```bash
+cp .github/instructions/career-profile-template.instructions.md \
+  .github/instructions/career-profile-{YourName}.instructions.md
+
+# Also mirror for Claude Code
+cp .claude/instructions/career-profile-template.instructions.md \
+  .claude/instructions/career-profile-{YourName}.instructions.md
 ```
 
 Fill in: `{Full Name}`, `{Email}`, `{Phone}`, `{LinkedIn}`, `{Location}`, `Target Roles`, `Target Industries`.
@@ -77,8 +111,22 @@ Place your full resume (all skills, full history) at:
 
 Use the template at `.github/skills/resume-tailor/assets/template-markdown.md` as a starting point, or run the extract script on an existing `.docx`/`.pdf`:
 
+**Windows (PowerShell):**
 ```powershell
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\extract-resume.py "path\to\Resume.docx" -o ".github\Users\{YourName}\{YourName}_Resume.md"
+python .github\skills\resume-tailor\scripts\extract-resume.py `
+  "path\to\Resume.docx" -o ".github\Users\{YourName}\{YourName}_Resume.md"
+```
+
+**Windows (cmd):**
+```cmd
+python .github\skills\resume-tailor\scripts\extract-resume.py ^
+  "path\to\Resume.docx" -o ".github\Users\{YourName}\{YourName}_Resume.md"
+```
+
+**macOS / Linux (bash):**
+```bash
+python .github/skills/resume-tailor/scripts/extract-resume.py \
+  "path/to/Resume.docx" -o ".github/Users/{YourName}/{YourName}_Resume.md"
 ```
 
 ---
@@ -206,16 +254,45 @@ Scrapes public LinkedIn job listings and produces a timestamped Excel file rated
 
 **Or run directly:**
 
+**Windows (PowerShell):**
 ```powershell
 # All target roles from career profile (default — past 24 hours)
-.\.venv\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user Pravin
+python .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user Pravin
 
 # Specific keyword, location, time window, result limit
-.\.venv\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py `
+python .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py `
   -k "Data Analyst" -l "Dublin, Ireland" -d week -m 50 --user Pravin
 
 # Multiple explicit keywords
-.\.venv\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py `
+python .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py `
+  -k "DevOps" -k "SRE" -k "Platform Engineer" --user Pravin
+```
+
+**Windows (cmd):**
+```cmd
+REM All target roles from career profile (default — past 24 hours)
+python .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user Pravin
+
+REM Specific keyword, location, time window, result limit
+python .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py ^
+  -k "Data Analyst" -l "Dublin, Ireland" -d week -m 50 --user Pravin
+
+REM Multiple explicit keywords
+python .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py ^
+  -k "DevOps" -k "SRE" -k "Platform Engineer" --user Pravin
+```
+
+**macOS / Linux (bash):**
+```bash
+# All target roles from career profile (default — past 24 hours)
+python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py --user Pravin
+
+# Specific keyword, location, time window, result limit
+python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py \
+  -k "Data Analyst" -l "Dublin, Ireland" -d week -m 50 --user Pravin
+
+# Multiple explicit keywords
+python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py \
   -k "DevOps" -k "SRE" -k "Platform Engineer" --user Pravin
 ```
 
@@ -276,16 +353,42 @@ Tailors a master resume to a specific job description. Produces an ATS-optimised
 
 **Convert a `.docx`/`.pdf` to Markdown (onboarding a new resume):**
 
+**Windows (PowerShell):**
 ```powershell
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\extract-resume.py `
+python .github\skills\resume-tailor\scripts\extract-resume.py `
   "path\to\Resume.docx" -o ".github\Users\Pravin\Pravin_Resume.md"
+```
+
+**Windows (cmd):**
+```cmd
+python .github\skills\resume-tailor\scripts\extract-resume.py ^
+  "path\to\Resume.docx" -o ".github\Users\Pravin\Pravin_Resume.md"
+```
+
+**macOS / Linux (bash):**
+```bash
+python .github/skills/resume-tailor/scripts/extract-resume.py \
+  "path/to/Resume.docx" -o ".github/Users/Pravin/Pravin_Resume.md"
 ```
 
 **Generate `.docx` from Markdown manually:**
 
+**Windows (PowerShell):**
 ```powershell
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\md-to-docx.py `
+python .github\skills\resume-tailor\scripts\md-to-docx.py `
   ".github\Users\Pravin\Pravin_Resume_Acme.md" "Pravin\Resumes\Acme" "Pravin Kumar Durairaj"
+```
+
+**Windows (cmd):**
+```cmd
+python .github\skills\resume-tailor\scripts\md-to-docx.py ^
+  ".github\Users\Pravin\Pravin_Resume_Acme.md" "Pravin\Resumes\Acme" "Pravin Kumar Durairaj"
+```
+
+**macOS / Linux (bash):**
+```bash
+python .github/skills/resume-tailor/scripts/md-to-docx.py \
+  ".github/Users/Pravin/Pravin_Resume_Acme.md" "Pravin/Resumes/Acme" "Pravin Kumar Durairaj"
 ```
 
 **ATS Rules enforced automatically:**
@@ -344,13 +447,36 @@ flowchart TD
 
 Process an entire job manifest without LLM approvals (~95% fewer tokens than manual batch):
 
+**Windows (PowerShell):**
 ```powershell
 # Step 1: Generate manifest from latest scraped Excel
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\batch-job-reader.py --user Pravin --min-fit 50
+python .github\skills\resume-tailor\scripts\batch-job-reader.py --user Pravin --min-fit 50
 
 # Step 2: Tailor all jobs autonomously (output: .docx per job, context .md, log entry)
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\batch-pipeline.py `
+python .github\skills\resume-tailor\scripts\batch-pipeline.py `
   --manifest Pravin\JobSearch\batch_manifest_{ts}.json `
+  --min-fit 50 --llm-polish-above 75
+```
+
+**Windows (cmd):**
+```cmd
+REM Step 1: Generate manifest from latest scraped Excel
+python .github\skills\resume-tailor\scripts\batch-job-reader.py --user Pravin --min-fit 50
+
+REM Step 2: Tailor all jobs autonomously (output: .docx per job, context .md, log entry)
+python .github\skills\resume-tailor\scripts\batch-pipeline.py ^
+  --manifest Pravin\JobSearch\batch_manifest_{ts}.json ^
+  --min-fit 50 --llm-polish-above 75
+```
+
+**macOS / Linux (bash):**
+```bash
+# Step 1: Generate manifest from latest scraped Excel
+python .github/skills/resume-tailor/scripts/batch-job-reader.py --user Pravin --min-fit 50
+
+# Step 2: Tailor all jobs autonomously (output: .docx per job, context .md, log entry)
+python .github/skills/resume-tailor/scripts/batch-pipeline.py \
+  --manifest Pravin/JobSearch/batch_manifest_{ts}.json \
   --min-fit 50 --llm-polish-above 75
 ```
 
@@ -369,10 +495,25 @@ Each job: keyword-match bullets → filter skills → write `.docx` directly →
 
 **tailor-resume.py** (single job, called internally by batch-pipeline):
 
+**Windows (PowerShell):**
 ```powershell
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\tailor-resume.py `
+python .github\skills\resume-tailor\scripts\tailor-resume.py `
   --user Pravin --company "Acme Corp" --role "Senior Data Analyst" `
   --jd "path\to\jd.txt" --fit 82
+```
+
+**Windows (cmd):**
+```cmd
+python .github\skills\resume-tailor\scripts\tailor-resume.py ^
+  --user Pravin --company "Acme Corp" --role "Senior Data Analyst" ^
+  --jd "path\to\jd.txt" --fit 82
+```
+
+**macOS / Linux (bash):**
+```bash
+python .github/skills/resume-tailor/scripts/tailor-resume.py \
+  --user Pravin --company "Acme Corp" --role "Senior Data Analyst" \
+  --jd "path/to/jd.txt" --fit 82
 ```
 
 ---
@@ -390,8 +531,21 @@ Each job: keyword-match bullets → filter skills → write `.docx` directly →
 2. Add master resume at `.github/Users/{Name}/{Name}_Resume.md`
 3. Create output folders:
 
+   **Windows (PowerShell):**
    ```powershell
    New-Item -ItemType Directory -Path "{Name}\JobSearch\archive", "{Name}\Resumes", "{Name}\History"
+   ```
+
+   **Windows (cmd):**
+   ```cmd
+   mkdir {Name}\JobSearch\archive
+   mkdir {Name}\Resumes
+   mkdir {Name}\History
+   ```
+
+   **macOS / Linux (bash):**
+   ```bash
+   mkdir -p {Name}/JobSearch/archive {Name}/Resumes {Name}/History
    ```
 
 4. The user is immediately available as `--user {Name}` for both skills
