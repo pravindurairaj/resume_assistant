@@ -29,8 +29,13 @@ scrape LinkedIn jobs → tailor resume to JD → export ATS-friendly `.docx`.
 
 ## Active Users
 
-Add users by creating a career profile in `.github/instructions/` and a master resume
-in `.github/Users/{Name}/`. See `career-profile-template.instructions.md` for the format.
+| User | Role | Profile |
+|------|------|---------|
+| Pravin | SRE/DevOps at Murex, Dublin | `career-profile-pravin.instructions.md` |
+| Navya | Financial Accountant, Dublin | `career-profile-navya.instructions.md` |
+
+Add a new user by placing `{Name}_Resume.docx` in the project root and running `setup-users.py {Name}`.
+Then create `.github/instructions/career-profile-{Name}.instructions.md` from the template.
 
 ## Key Rules
 
@@ -53,8 +58,12 @@ in `.github/Users/{Name}/`. See `career-profile-template.instructions.md` for th
 ## Python Environment
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
+# Venv is named resume_assistant (not .venv)
+.\resume_assistant\Scripts\Activate.ps1
 pip install -r requirements.txt
+
+# Run scripts directly without activating
+resume_assistant\Scripts\python setup-users.py
 ```
 
 All scripts: `.github/skills/resume-tailor/scripts/` and `.github/skills/job-scraper/scripts/`

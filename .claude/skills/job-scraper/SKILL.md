@@ -14,7 +14,7 @@ Scrape public LinkedIn job listings and produce a timestamped Excel report with 
 > Ensure these are satisfied before running the scraper.
 
 - **Python 3.10+** installed and available
-- **Virtual environment** activated: `.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (macOS/Linux)
+- **Virtual environment** activated: `resume_assistant\Scripts\activate` (Windows) or `source resume_assistant/bin/activate` (macOS/Linux)
 - **Dependencies installed**: `pip install -r requirements.txt` (needs `requests`, `beautifulsoup4`, `openpyxl`)
 - **Career profile exists**: `.github/instructions/career-profile-{UserName}.instructions.md` with `Target Roles` and `Location` filled in
 - **Output folder**: `{UserName}/JobSearch/` (auto-created by the script if missing)
@@ -95,7 +95,7 @@ Construct the command from the arguments provided:
 
 ```bash
 # Run from the project root (wherever this repo is cloned)
-.\.venv\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user {UserName}
+resume_assistant\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user {UserName}
 ```
 
 Add optional flags only if explicitly provided by the user:

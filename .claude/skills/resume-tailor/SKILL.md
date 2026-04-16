@@ -14,7 +14,7 @@ Create an ATS-friendly, JD-tailored resume from a stored candidate resume and a 
 > Ensure these are satisfied before tailoring a resume.
 
 - **Python 3.10+** installed and available
-- **Virtual environment** activated: `.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (macOS/Linux)
+- **Virtual environment** activated: `resume_assistant\Scripts\activate` (Windows) or `source resume_assistant/bin/activate` (macOS/Linux)
 - **Dependencies installed**: `pip install -r requirements.txt` (needs `python-docx`, `markitdown[docx,pdf]`, `openpyxl`)
 - **Career profile exists**: `.github/instructions/career-profile-{UserName}.instructions.md` (PII — add locally, gitignored)
 - **Master resume exists**: `.github/Users/{UserName}/{UserName}_Resume.md` (PII — add locally, gitignored)
@@ -154,7 +154,7 @@ Triggered when user invokes `/resume-tailor batch <UserName>`:
 **B1. Run the manifest generator:**
 ```bash
 # Run from the project root (wherever this repo is cloned)
-.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\batch-job-reader.py --user {UserName} [--min-fit N] [--manifest path]
+resume_assistant\Scripts\python.exe .github\skills\resume-tailor\scripts\batch-job-reader.py --user {UserName} [--min-fit N] [--manifest path]
 ```
 
 **B2. Read the manifest:** `read_file` the JSON path printed by the script.
