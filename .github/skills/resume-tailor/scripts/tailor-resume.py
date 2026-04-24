@@ -517,8 +517,8 @@ def main():
     parser.add_argument('--output', help='Override output .docx path')
     parser.add_argument('--author', default=None, help='Author name for .docx metadata')
     parser.add_argument('--context-file', default=None, help='Override context .md path')
-    parser.add_argument('--max-bullets', type=int, default=15,
-                        help='Max bullets to keep for current role')
+    parser.add_argument('--max-bullets', type=int, default=10,
+                        help='Max bullets to keep for current role (default: 10; ATS rule for Pravin/Murex)')
     args = parser.parse_args()
 
     # Load job entry

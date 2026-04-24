@@ -163,3 +163,13 @@ When `JobSearch/` has multiple Excel files:
 1. Read all `.xlsx`, merge rows, deduplicate by Job Link
 2. Save `LinkedIn_Jobs_Master_{YYYYMMDD}.xlsx`
 3. Move old files to `{User}/JobSearch/archive/`
+
+### 2026-04-23 — v4
+
+| Change | Detail |
+|--------|--------|
+| `--skip-jd-scrape` flag added | Opt-out flag for fast title-only scan (fit %% capped at 40). Default remains: fetch JD per job for full Phase-1+2 scoring. |
+| JD files persisted during scrape | Fetched JDs now saved to `{User}/JobSearch/jds/{job_id}.txt` so `batch-job-reader` reuses them without re-scraping. |
+| `batch-job-reader` checks `{job_id}.txt` first | `load_jd_files()` now tries `{job_id}.txt` (from link) before company-name patterns. After scraping a JD, saves to `jds/{folder_name}.txt` for future runs. |
+| `.github/` mirror restored | Career-profile filenames normalised to lowercase (canonical). Stale `.github/` templates replaced with real filled-in `.claude/` content. `copilot-instructions.md` added to `.claude/`. |
+| Prompt venv path fixed | `/job-scraper-pravin` and `/job-scraper-navya` prompts updated from `.venv` → `resume_assistant`. |

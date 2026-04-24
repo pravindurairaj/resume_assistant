@@ -68,6 +68,10 @@ tmp*.tex
 # ── Third-party generated output ────────────────────────────
 graphify-out/
 
+# ── Claude Code local settings ───────────────────────────────
+# settings.local.json is machine-specific; never commit
+.claude/settings.local.json
+
 # ── IDE / OS ─────────────────────────────────────────────────
 .vscode/settings.json
 .DS_Store

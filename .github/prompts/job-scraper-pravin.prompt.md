@@ -10,7 +10,7 @@ Run immediately — no confirmation:
 
 ```powershell
 # Run from the project root (wherever this repo is cloned)
-.\.venv\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user Pravin
+.\resume_assistant\Scripts\python.exe .github\skills\job-scraper\scripts\scrape-linkedin-jobs.py --user Pravin
 ```
 
 Add any optional flags the user included (`-k`, `-l`, `-d`, `--max`).

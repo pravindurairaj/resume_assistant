@@ -26,8 +26,11 @@ import argparse
 import re
 import sys
 import time
+import urllib3
 from datetime import datetime
 from pathlib import Path
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 # ── Dependency check ──────────────────────────────────────────────────────────
@@ -178,12 +181,12 @@ def scrape_linkedin_jobs(keywords, location, date_posted="day", max_results=100)
             params["f_TPR"] = time_filter
 
         try:
-            resp = requests.get(url, params=params, headers=headers, timeout=15)
+            resp = requests.get(url, params=params, headers=headers, timeout=15, verify=False)
 
             if resp.status_code == 429:
                 print(f"  Rate limited (429). Waiting 30s before retrying...")
                 time.sleep(30)
-                resp = requests.get(url, params=params, headers=headers, timeout=15)
+                resp = requests.get(url, params=params, headers=headers, timeout=15, verify=False)
 
             if resp.status_code != 200:
                 print(f"  Page {start // 25 + 1}: HTTP {resp.status_code} — stopping.")
@@ -260,12 +263,12 @@ def scrape_job_description(job_link):
     }
 
     try:
-        resp = requests.get(url, headers=headers, timeout=15)
+        resp = requests.get(url, headers=headers, timeout=15, verify=False)
 
         if resp.status_code == 429:
             print("    Rate limited (429). Waiting 30s...")
             time.sleep(30)
-            resp = requests.get(url, headers=headers, timeout=15)
+            resp = requests.get(url, headers=headers, timeout=15, verify=False)
 
         if resp.status_code != 200:
             return "", False
@@ -605,6 +608,8 @@ def main():
                         help="Max listings per keyword (default: 100)")
     parser.add_argument("--output-dir",  "-o", default=None,
                         help="Output directory (default: {UserName}/JobSearch)")
+    parser.add_argument("--skip-jd-scrape", action="store_true", default=False,
+                        help="Skip per-job JD fetching (faster, but fit %% capped at 40 — title-only scoring)")
 
     args = parser.parse_args()
     check_dependencies()
@@ -682,15 +687,38 @@ def main():
         print(f"\nWARNING: No skills loaded for '{args.user}' — JD skill matching disabled.")
 
     # ── Scrape JDs from LinkedIn guest API ────────────────────────────────────
-    print(f"\nFetching JD text for {len(all_jobs)} job(s) via LinkedIn guest API...")
-    for i, j in enumerate(all_jobs, 1):
-        label = f"{j['company'][:25]} — {j['title'][:30]}"
-        print(f"  [{i}/{len(all_jobs)}] {label}...", end=" ", flush=True)
-        jd_text, ok = scrape_job_description(j["link"])
-        j["_jd_text"] = jd_text
-        print("\u2713" if ok else "\u2717")
-        if i < len(all_jobs):
-            time.sleep(5)
+    jds_dir = out_dir / "jds"
+    if args.skip_jd_scrape:
+        print("\n--skip-jd-scrape set: skipping JD fetch (fit %% capped at 40, title-only scoring)")
+        for j in all_jobs:
+            j["_jd_text"] = ""
+    else:
+        print(f"\nFetching JD text for {len(all_jobs)} job(s) via LinkedIn guest API...")
+        jds_dir.mkdir(parents=True, exist_ok=True)
+        for i, j in enumerate(all_jobs, 1):
+            label = f"{j['company'][:25]} — {j['title'][:30]}"
+            print(f"  [{i}/{len(all_jobs)}] {label}...", end=" ", flush=True)
+
+            # Check cached JD file first (job_id extracted from link)
+            jd_text, ok = "", False
+            m = re.search(r'(\d{8,})', j.get("link") or "")
+            if m:
+                cached = jds_dir / f"{m.group(1)}.txt"
+                if cached.exists():
+                    jd_text = cached.read_text(encoding="utf-8")
+                    ok = bool(jd_text)
+                    if ok:
+                        print("(cached)", end=" ", flush=True)
+
+            if not ok:
+                jd_text, ok = scrape_job_description(j["link"])
+                if ok and jd_text and m:
+                    (jds_dir / f"{m.group(1)}.txt").write_text(jd_text, encoding="utf-8")
+
+            j["_jd_text"] = jd_text
+            print("\u2713" if ok else "\u2717")
+            if i < len(all_jobs):
+                time.sleep(5)
 
     # ── Two-phase fit scoring (title + JD skills) ─────────────────────────────
     if target_roles:

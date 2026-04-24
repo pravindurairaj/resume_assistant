@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(cp .github/context/resume_tailor.md .claude/context/resume_tailor.md)",
-      "Bash(cp .github/context/job_scraper.md .claude/context/job_scraper.md)"
+      "Bash(cp .github/context/job_scraper.md .claude/context/job_scraper.md)",
+      "Bash(cp \".claude/instructions/career-profile-pravin.instructions.md\" \".github/instructions/career-profile-pravin.instructions.md\")",
+      "Bash(cp \".claude/instructions/career-profile-navya.instructions.md\" \".github/instructions/career-profile-navya.instructions.md\")",
+      "Bash(cp .claude/Users/Pravin/Pravin_Resume.md .github/Users/Pravin/Pravin_Resume.md)",
+      "Bash(cp .github/Users/Navya/Navya_Resume.md .claude/Users/Navya/Navya_Resume.md)",
+      "Bash(rm .claude/Users/Pravin/Pravin_Resume.tex)",
+      "Bash(cp CLAUDE.md .claude/CLAUDE.md)",
+      "Bash(cp .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py .claude/skills/job-scraper/scripts/scrape-linkedin-jobs.py)",
+      "Bash(cp .github/skills/resume-tailor/scripts/batch-job-reader.py .claude/skills/resume-tailor/scripts/batch-job-reader.py)",
+      "Bash(cp .github/skills/resume-tailor/scripts/batch-pipeline.py .claude/skills/resume-tailor/scripts/batch-pipeline.py)",
+      "Bash(cp .github/skills/resume-tailor/scripts/tailor-resume.py .claude/skills/resume-tailor/scripts/tailor-resume.py)",
+      "Bash(rm .claude/CLAUDE.md)",
+      "Bash(cp .github/skills/resume-tailor/scripts/extract-resume.py .claude/skills/resume-tailor/scripts/extract-resume.py)"
     ]
   }
 }

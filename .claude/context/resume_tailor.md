@@ -130,3 +130,12 @@ The resume-tailor skill creates ATS-friendly, JD-tailored resumes from stored ma
 | `.github/skills/resume-tailor/assets/template-markdown.md` | Markdown resume template |
 | `.github/skills/resume-tailor/references/ats-guidelines.md` | ATS formatting reference |
 | `.github/context/resume_tailor.md` | This file — development context |
+
+### 2026-04-23 — v4
+
+| Change | Detail |
+|--------|--------|
+| `--max-bullets` CLI default aligned | `tailor-resume.py` CLI default changed from 15 → 10 to match ATS rule (Pravin/Murex max 10) and `batch-pipeline.py` default. |
+| `resume_cache` threaded through batch | `batch-pipeline.py` now loads `tailor-resume.py` module once via `load_tailor_module()` and calls `parse_master_resume()` once before the loop; `run_tailor()` receives `tailor_mod` + `resume_cache` as params. Eliminates N redundant file reads per batch. |
+| `batch-job-reader` saves scraped JDs | After scraping a JD from LinkedIn, saves to `jds/{folder_name}.txt` so subsequent runs use the cached file. |
+| CLAUDE.md updated | Added `--skip-jd-scrape` example to Key Commands section. Merged `CLAUDE._1md` behavioral guidelines as appendix. |

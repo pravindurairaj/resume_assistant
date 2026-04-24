@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 extract-resume.py — Extract structured Markdown from a resume file using Microsoft MarkItDown.
 

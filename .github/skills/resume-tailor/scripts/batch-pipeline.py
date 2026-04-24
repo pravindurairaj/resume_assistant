@@ -36,22 +36,22 @@ def job_already_done(job: dict) -> bool:
     return docx_path.exists()
 
 
-def run_tailor(job: dict, master_path: str, author: str, max_bullets: int,
-               max_older_bullets: int = 4, max_projects: int = 2) -> dict:
-    """Run tailor-resume.py for a single job entry. Returns report dict."""
-    # Import directly for speed (avoid subprocess overhead)
-    script_dir = Path(__file__).resolve().parent
-    sys.path.insert(0, str(script_dir))
-
-    from importlib import import_module
+def load_tailor_module():
+    """Load tailor-resume.py once via importlib (avoids hyphen import issue)."""
     import importlib.util
-
+    script_dir = Path(__file__).resolve().parent
     spec = importlib.util.spec_from_file_location(
         'tailor_resume', script_dir / 'tailor-resume.py'
     )
     tailor_mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(tailor_mod)
+    return tailor_mod
 
+
+def run_tailor(job: dict, master_path: str, author: str, max_bullets: int,
+               tailor_mod, resume_cache: dict = None,
+               max_older_bullets: int = 4, max_projects: int = 2) -> dict:
+    """Run tailor_job for a single entry. Uses pre-loaded module + cached resume."""
     return tailor_mod.tailor_job(
         job=job,
         master_path=master_path,
@@ -59,6 +59,7 @@ def run_tailor(job: dict, master_path: str, author: str, max_bullets: int,
         max_bullets=max_bullets,
         max_older_bullets=max_older_bullets,
         max_projects=max_projects,
+        resume_cache=resume_cache,
     )
 
 
@@ -146,6 +147,11 @@ def main():
         print(f"\nTotal: {total} jobs")
         return
 
+    # Load tailor module and parse master resume ONCE for the entire batch
+    tailor_mod = load_tailor_module()
+    resume_cache = tailor_mod.parse_master_resume(master_path)
+    print(f"Parsed master resume once ({len(resume_cache.get('experience', []))} roles cached).\n")
+
     results = []
     start_time = time.time()
 
@@ -177,6 +183,7 @@ def main():
 
         try:
             report = run_tailor(job, master_path, author, args.max_bullets,
+                                tailor_mod, resume_cache,
                                 args.max_older_bullets, args.max_projects)
             result_entry['status'] = 'completed'
             result_entry['match_pct'] = f"{report.get('match_pct', 0)}%"

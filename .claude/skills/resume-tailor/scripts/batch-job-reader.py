@@ -351,24 +351,32 @@ def load_jd_files(jobs, user):
     Check {User}/JobSearch/jds/ for pre-saved JD text files and load them.
 
     File matching order (first match wins):
-      1. {folder_name}.txt
-      2. {company_sanitized}_{title_short}.txt
-      3. {company_sanitized}.txt
+      1. {job_id}.txt  — saved by scrape-linkedin-jobs.py during scrape phase
+      2. {folder_name}.txt
+      3. {company_sanitized}_{title_short}.txt
+      4. {company_sanitized}.txt
 
     Sets jd_text and jd_source on each job dict.
     """
+    import re
     jds_dir = Path(user) / "JobSearch" / "jds"
 
     for job in jobs:
-        jd_text  = ""
+        jd_text   = ""
         jd_source = "pending_user_input"
 
         if jds_dir.exists():
-            candidates = [
+            # job_id from link (scraper saves as {job_id}.txt)
+            job_id_match = re.search(r'(\d{8,})', job.get("link") or "")
+            job_id_file  = jds_dir / f"{job_id_match.group(1)}.txt" if job_id_match else None
+
+            candidates = [c for c in [
+                job_id_file,
                 jds_dir / f"{job['folder_name']}.txt",
                 jds_dir / f"{job['company_sanitized']}_{job['title_short']}.txt",
                 jds_dir / f"{job['company_sanitized']}.txt",
-            ]
+            ] if c is not None]
+
             for candidate in candidates:
                 if candidate.exists():
                     try:
@@ -494,6 +502,9 @@ def main():
 
     pending_jd = [j for j in to_process if j["jd_source"] == "pending_user_input"]
     if pending_jd and scraper_module:
+        import re as _re
+        jds_dir = Path(user) / "JobSearch" / "jds"
+        jds_dir.mkdir(parents=True, exist_ok=True)
         print(f"\n  Scraping JDs from LinkedIn for {len(pending_jd)} job(s)...")
         for idx, job in enumerate(pending_jd, 1):
             if job["link"]:
@@ -503,6 +514,12 @@ def main():
                 if ok and jd_text:
                     job["jd_text"] = jd_text
                     job["jd_source"] = "scraped_linkedin"
+                    # Save for reuse by future runs
+                    jd_file = jds_dir / f"{job['folder_name']}.txt"
+                    try:
+                        jd_file.write_text(jd_text, encoding="utf-8")
+                    except Exception:
+                        pass
                     print("\u2713")
                 else:
                     print("\u2717 (blocked/empty)")
