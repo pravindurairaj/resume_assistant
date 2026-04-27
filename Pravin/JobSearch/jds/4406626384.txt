@@ -1,0 +1,18 @@
+Software Engineer (C#/.NET)
+Healthcare
+Dublin (Hybrid)
+€70,000 - €80,000 + strong benefits
+IT Search has exclusively partnered with a healthcare organisation in Dublin to hire a Software Engineer into a team working on critical applications and core systems.
+This is a broad engineering role covering architecture, development, systems integration and optimisation, with a mix of new development and enhancement work.
+This role offers strong ownership across the full development lifecycle, with a mix of greenfield development and enhancement of established systems. There are modernisation and integration projects underway, exposure to varied technical challenges, and the opportunity to work within a meaningful healthcare environment where the technology has real impact.
+What they’re looking for:
+Strong C# / .NET development experience
+Solid SQL skills (SQL Server or MySQL)
+Experience building and integrating APIs / web services
+Frontend exposure with JavaScript/HTML/CSS
+Systems integration experience
+Any scripting or automation experience is a plus
+Exposure to healthcare systems or standards such as HL7 is beneficial, but not required.
+Open to backend or full stack engineers looking for strong technical ownership.
+Interested?
+Apply via the link or contact Graeme King at IT Search for a confidential discussion.

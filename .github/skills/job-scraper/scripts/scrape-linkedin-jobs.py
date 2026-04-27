@@ -669,7 +669,7 @@ def main():
 
         all_jobs.extend(new_jobs)
         dupes = len(jobs) - len(new_jobs)
-        print(f"  → {len(new_jobs)} new unique jobs  (duplicates skipped: {dupes})")
+        print(f"  -> {len(new_jobs)} new unique jobs  (duplicates skipped: {dupes})")
 
     if not all_jobs:
         print("\nNo jobs found. Try: broader keywords, different date filter, or check connectivity.")
@@ -716,7 +716,7 @@ def main():
                     (jds_dir / f"{m.group(1)}.txt").write_text(jd_text, encoding="utf-8")
 
             j["_jd_text"] = jd_text
-            print("\u2713" if ok else "\u2717")
+            print("OK" if ok else "FAIL")
             if i < len(all_jobs):
                 time.sleep(5)
 
@@ -753,7 +753,7 @@ def main():
         high = sum(1 for j in all_jobs if j.get("_fit", 0) >= 75)
         med  = sum(1 for j in all_jobs if 50 <= j.get("_fit", 0) < 75)
         low  = len(all_jobs) - high - med
-        print(f"Fit   : 🟢 High ≥75%: {high}  🟡 Medium 50-74%: {med}  🔴 Low <50%: {low}")
+        print(f"Fit   : High >=75%: {high}  Medium 50-74%: {med}  Low <50%: {low}")
     print(f"Open  : {output_path}")
 
 

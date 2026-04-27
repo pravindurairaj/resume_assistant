@@ -1,0 +1,33 @@
+Summary
+We are seeking multiple Senior Clinical Data Scientists responsible for providing timely & ongoing Management of Data management /Coding/CDDRA-Database Development/DAP deliverables and of clinical trial data with respect to cost, quality and timelines for all assigned trials within Clinical Data Mgmt. Ensure consistently high quality data available for analysis and reporting. Develop content and redefine training modules into engaging & interactive applications. Leverage technology to ensure process simplification and training delivery. Follows Good Clinical Practices (GCP), data-handling procedures and guidelines.
+Participates in the review of clinical research protocols, reports and statistical analysis plans. Drives participation and input within Data Operations (DO) in the delivery of quality data and programs, processes and documentation -Manage data Load, Transfer and conform of Clinical trial data to NCDS compliant standards.
+The position is a key contributor with Data Provisioning team in ensuring that pharmaceutical drug-development plans in Novartis Global Drug Development are executed efficiently with timely and high quality deliverables.
+About The Role
+Major accountabilities:
+Provides DM leadership across assigned trial (s) and Acts as the Trial Data Manager where needed -Demonstrates a business understanding of the compound (s) profile to identify and assist in successful application of data Mgmt processes.
+Provides feedback to assure well written protocols and amendments.
+Recognize and resolve protocol issues that may impact database design, data validation and /or analysis/reporting and that do not make the best use of available standards -Performs DM activities for start up of a study, Data Handling plan , Data Review Plan and performing user acceptance testing (UAT) -Manage local lab set up for the Clinical Database as applicable -Leads process and training deliverables within platform or processes.
+Accountable for all aspects of the Process and Training within remit to ensure full compliance to all applicable global regulatory requirements is maintained and business objectives are achieved.
+Accountable for all quality related aspects -Centralizes and aligns DO for audits and inspections.
+Manages and measures Quality -Coordinates exception requests, deviations and corrective /preventative action plans -Performs DM hands on activities during the course of the study Performs ongoing review of all data generated from the clinical study including Third party and local lab data as well as SAE reconciliation where applicable -Responsible and accountable to ensure consistency of assigned trials with program level standards across DM documentation -Has proven abiity to use the tools available to generate listings for data review and where necessary provides these to the study teams.
+Generates the study status reports for use at Clinical trial team meetings.
+Supports and assists Junior staff for assigned trials -Provides effective input into DM initiatives and innovations for quality, efficiency and continuous improvement in scientific and operational excellence -Leads /Coordinates synonym review activities and dictionary version upgrade activities at trial /Program level.
+Serves as primary study lead ensuring timely and quality deliverables by establishing and maintaining strong working relationships with study teams, and functional lines.
+Acts as a technical consultant as required.
+Lead DAP activities for assigned /Project level activities for phase I to IV clinical studies in Novartis Global Drug Development.
+Lead independently or participate in improvement initiatives and /or nonclinical projects.
+Reporting of technical complaints / adverse events / special case scenarios related to Novartis products within 24 hours of receipt -Distribution of marketing samples (where applicable)
+Minimum Requirements
+Degree / Masters qualified in a relevant area
+Experience in Drug Development with at least 4 years' in Clinical Data Management
+Experience working across several end to end studies
+Strong collaboration and organizational skills with proven ability to successfully manage simultaneous trials and meet deadlines
+Excellent understanding of clinical trials methodology, GCP and medical terminology
+Proven ability to interrogate and view data through various programming/GUI techniques.
+Commitment to Diversity & Inclusion:
+We are committed to building an outstanding, inclusive work environment and diverse teams representative of the patients and communities we serve.
+Why Novartis:
+Helping people with disease and their families takes more than innovative science. It takes a community of smart, passionate people like you. Collaborating, supporting and inspiring each other. Combining to achieve breakthroughs that change patients’ lives. Ready to create a brighter future together? https://www.novartis.com/about/strategy/people-and-culture
+Benefits and Rewards:
+Learn about all the ways we’ll help you thrive personally and professionally.
+Read our handbook (PDF 30 MB)

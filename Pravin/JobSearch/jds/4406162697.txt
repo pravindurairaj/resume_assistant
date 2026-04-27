@@ -1,0 +1,47 @@
+We’re seeking an experienced
+AWS Platform Engineer
+to design, build, and evolve a secure, scalable cloud platform on AWS.
+You’ll play a key role in enabling engineering teams through automation, modern cloud services, and resilient infrastructure, while operating in an enterprise and potentially regulated environment.
+This role is ideal for someone who enjoys building cloud-native platforms, improving developer experience, and driving best practices across infrastructure and delivery.
+Responsibilities:
+Design, build, and manage AWS infrastructure using
+Infrastructure as Code
+, primarily
+CloudFormation
+Develop and operate
+serverless applications
+using native AWS services
+Build and maintain
+CI/CD pipelines
+to automate application and infrastructure deployments
+Continuously enhance and extend our internal
+cloud platform capabilities
+Implement monitoring, alerting, and performance improvements across the platform
+Partner with internal teams to improve how AWS services are adopted and used
+Ensure high availability, resilience, security, and cost efficiency across all environments
+Experience Required:
+Significant hands-on experience with
+AWS
+and its native services
+Proven experience designing and operating
+highly available, resilient systems
+at enterprise scale
+Strong background in
+infrastructure design and management
+, with a focus on security, scalability, and cost optimisation
+Experience with
+scripting and automation
+(e.g. Bash, Python)
+Comfortable working in
+Agile delivery teams
+, with a solid understanding of Agile tools and practices
+Experience working in, or a strong understanding of,
+regulated or risk-aware environments
+Desirables:
+AWS certifications
+(DevOps Engineer, Solutions Architect, or Developer)
+Experience building
+CI/CD pipelines using native AWS services
+such as CodeBuild, CodePipeline, and Step Functions
+Exposure to observability and monitoring tools within AWS or third-party platforms
+For more information please apply within with most up to date CV.

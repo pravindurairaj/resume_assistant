@@ -1,0 +1,57 @@
+About Ekco
+🚀 Founded in 2016, Ekco has quickly become one of Europe’s fastest-growing cloud solution providers and your trusted security-first Managed Service Provider.
+IT leaders choose Ekco to drive operational efficiency, scale smarter and stay ahead of risk – powered by local expertise, delivered at European scale.
+We specialise in helping organisations advance their cloud maturity guiding transformation, strengthening security, and maximising the value of their technology investments.
+☁️ In simple terms: we help organisations modernise with confidence securing their systems, optimising their cloud, and keeping them resilient in a rapidly changing world.
+🌍 Today, we’re a thriving team of 1,000+ talented and supportive colleagues across the UK, Ireland, Benelux, South Africa, and Malaysia—and we’re continuing to grow.
+At Ekco, how we work matters as much as what we deliver. Our people live by four core values that shape everything we do:
+On It
+: We take ownership, follow through, and get things done.
+All
+In : We collaborate, support each other, and commit fully to shared goals.
+Connected
+: We build trusted relationships with colleagues, clients, and partners.
+Hungry to Grow
+: We stay curious, keep learning, and push ourselves to the next level.
+🏠If these values resonate with you, you’ll feel right at home here.
+The Role
+Day-to-day at Ekco:
+We’re looking for an experienced Azure Cloud Platform Engineer to design, build, and operate secure, enterprise-grade Azure platforms for mid-market and enterprise clients.
+You’ll play a key role in delivering Azure Landing Zones and shared platform services using Terraform Infrastructure as Code, helping clients adopt Azure in a way that is secure, scalable, and ready for long-term operation. This is a hands-on, client-facing role that combines deep Azure expertise with strong consultancy skills.
+What you’ll be responsible for:
+· Design and deliver Azure Landing Zones aligned to Microsoft Cloud Adoption Framework and enterprise best practices
+· Build and maintain Azure platforms using Terraform, including reusable modules and CI/CD pipelines
+· Implement core Azure platform services: networking, identity (Entra ID), governance, security, monitoring, and logging
+· Embed security‑by‑design using Azure Policy, RBAC, Defender for Cloud, and identity controls
+· Act as a technical authority on Azure platform decisions during client engagements
+· Support platforms through handover and early‑life support, ensuring operational readiness
+· Collaborate closely with architecture, project management, and service delivery teams
+· Mentor and coach other engineers, contributing to internal standards and best practices
+Key Requirements:
+· Strong hands‑on experience with Microsoft Azure in mid‑market or enterprise environments
+· Proven delivery of Azure Landing Zones or enterprise‑scale Azure foundations
+· Deep experience with Terraform, including modules, state management, and CI/CD integration
+· Solid understanding of cloud security, governance, and compliance in Azure
+· Experience supporting production Azure environments and troubleshooting complex issues
+· Confident communicator with experience working in client‑facing delivery roles
+· Typically 5+ years’ experience in cloud, infrastructure, or platform engineering roles
+Nice to Have:
+· Experience with Jenkins, GitHub, or GitLab
+· Exposure to hybrid or multi‑cloud environments
+· Familiarity with Azure security tooling, SIEM integration, or Cloud Centre of Excellence models
+Benefits / Perks
+• ☀️ Time Off: 25 days annual leave + public holidays
+• 🎂 Birthday Leave: One extra day off to celebrate
+• 💰 Company Pension Scheme
+• 📞 Employee Assistance Programme (EAP) for wellbeing support
+• 🏃 ♀️ EkcOlympics: Global team activity challenges
+• 📚 Unlimited access to Pluralsight for continuous development
+• 🌱 Real opportunities to grow, including international progression
+Why Ekco
+• ⭐️ Microsoft’s 2023 Rising Star Security Partner of the Year
+• 🚀 First Irish Microsoft MSP to achieve all four Microsoft Security Specializations
+• 🏅 Ranked 4th fastest-growing technology company in the Deloitte Fast50 Awards
+• 🌈 A culture rooted in diversity, equality, inclusion & belonging
+• 🎉 A commitment to internal mobility and career progression
+• ✨ Flexible, family-friendly working at the heart of our culture
+• 🔐 Proud to be your trusted security-first Managed Service Provider chosen by IT leaders to drive operational efficiency, scale smarter and stay ahead of risk.

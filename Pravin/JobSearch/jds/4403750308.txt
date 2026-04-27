@@ -1,0 +1,52 @@
+At eBay, we're more than a global ecommerce leader — we’re changing the way the world shops and sells. Our platform empowers millions of buyers and sellers in more than 190 markets around the world. We’re committed to pushing boundaries and leaving our mark as we reinvent the future of ecommerce for enthusiasts.
+Our customers are our compass, authenticity thrives, bold ideas are welcome, and everyone can bring their unique selves to work — every day. We're in this together, sustaining the future of our customers, our company, and our planet.
+Join a team of passionate thinkers, innovators, and dreamers — and help us connect people and build communities to create economic opportunity for all.
+About EBay
+At eBay, we're more than a global ecommerce leader — we’re changing the way the world shops and sells. Our platform empowers millions of buyers and sellers in more than 190 markets around the world. We’re committed to pushing boundaries and leaving our mark as we reinvent the future of ecommerce for enthusiasts.
+Our customers are our compass, authenticity thrives, bold ideas are welcome, and everyone can bring their unique selves to work — every day. We're in this together, sustaining the future of our customers, our company, and our planet.
+Join a team of passionate problem solvers, innovators, and dreamers — and help us connect people and build communities to create economic opportunity for all.
+Senior Technical Services Engineer, TechOps
+Location: Dublin, Ireland
+Job Type: Full-time, Hybrid
+About The Team And The Role
+Cloud Engineering & TechOps plays a critical role in protecting customer experience and enabling business growth by ensuring site reliability and fast issue resolution. Through strong partnerships with Engineering and GCX, the team drives data-driven operations, proactive issue detection, and continuous platform improvements at scale.
+As a Senior Technical Services Engineer (Bug Lead), you will act as a technical problem solver and innovation driver, leading the triage of complex site issues while building smarter, scalable solutions. You’ll
+transform how issues are detected, triaged, and prevented
+,
+using data, automation, and AI—making a direct impact on
+customer experience, site health, and business outcomes.
+Key Responsibilities
+SME & Triage Leadership: Own complex issue diagnosis, lead deep dives, and act as escalation point for critical site issues
+Operational Excellence: Drive and optimize the end-to-end bug lifecycle in Jira (prioritization, SLAs, workflows, quality)
+Customer Management: Partner with Engineering, GCX, and cross-functional teams; lead communications and bug review cadences
+Quality & Enablement: Improve triage quality, coach teams, and maintain clear, actionable knowledge (KEDB/Wiki)
+Data & Insights: Build and Use data and dashboards to identify trends, improve performance, and drive decisions
+Automation & Innovation: Lead automation and AI initiatives; drive shift-left and efficiency at scale
+Projects & Change: Support product launches and lead process/tooling improvements
+Requirements
+3+ years in technical operations / support engineering
+Bachelor’s/Master’s in Computer Science, Engineering or related field.
+Strong Jira experience (workflows, dashboards, reporting)
+Experience driving process improvements and cross-team collaboration
+Basic understanding of web technologies (APIs, frontend/backend)
+Hand-on knowledge of scripting (e.g., SQL, Python, JavaScript) with Experience in AI/automation initiatives and tooling (GitHub, Kibana)
+Experience in data analysis and reporting (Atlassian Analytics, dashboards, or similar tools)
+What You Bring
+Strong problem-solving and analytical thinking
+High ownership and ability to drive initiatives end-to-end
+Passion for automation, AI, and continuous improvement
+Excellent communication and partner management skills
+Nice to have: Experience in e-commerce or large-scale platform operations
+What Success Looks Like
+Faster, more accurate triage and resolution of complex issues
+Improved quality, SLA alignment, and reduced backlog
+Increased shift-left resolution and reduced dependency on Engineering
+Strong adoption of automation and AI-driven efficiencies, reducing manual effort
+Site Bugs recognized as a proactive, data-driven function
+Location and work model
+This role follows eBay’s hybrid work model, requiring three days per week onsite in the Dublin office (unless otherwise stated). Occasional travel may be required for global collaboration and team summits.
+Additional Details
+eBay is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, national origin, sex, sexual orientation, gender identity, veteran status, and disability, or other legally protected status. If you have a need that requires accommodation, please contact us at talent@ebay.com. We will make every effort to respond to your request for accommodation as soon as possible. View our accessibility statement to learn more about eBay's commitment to ensuring digital accessibility for people with disabilities.
+Additional Details
+eBay is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, national origin, sex, sexual orientation, gender identity, veteran status, and disability, or other legally protected status. If you have a need that requires accommodation, please contact us at talent@ebay.com. We will make every effort to respond to your request for accommodation as soon as possible. View our accessibility statement to learn more about eBay's commitment to ensuring digital accessibility for people with disabilities.
+We use cookies to enhance your experience and may use AI tools for administrative tasks in the hiring process. To learn how we handle your personal data and use AI responsibly, please visit our Talent Privacy Notice, Privacy Center, and AI Hiring Guidelines.

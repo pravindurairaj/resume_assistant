@@ -1,0 +1,47 @@
+Description
+At Amazon, security is central to maintaining customer trust and delivering delightful customer experiences. Our organization is responsible for creating and maintaining a high bar for security across all of Amazon’s products and services. Amazon Security Platform Engineering provides the tools that allow Amazon to secure the cloud, our employees, and our customers.
+At Amazon Security, we hire the best minds in technology to innovate and build on behalf of our customers. The focus we have on our customers is why we are one of the world’s most beloved brands – customer obsession is part of our company DNA.
+Amazon Security is a multidisciplinary team comprised of software engineers, security engineers, program managers, data engineers, and compliance specialists. If you are looking for an opportunity to think big, invent, experiment, build, and have a material impact on cloud security and compliance, this is it.
+Responsibilities
+AWS Security Operations Centre (SOC) Software Engineering team builds and owns services that automate and power security processes within Amazon. As an SDE on the SOC Software Engineering team, your role is pivotal in maintaining the robust and innovative solutions of our team. The team You will work on complex challenges in existing and new development initiatives, focusing on areas with ambiguity. Your goal is to design and develop software systems that are secure, maintainable, scalable, and extendable. You will develop an understanding of the business impact of your systems and make responsible trade-offs between the short-term operational needs and long-term business objectives. Professional traits that are not unique to this position, but necessary for Amazon leaders:
+Exhibits excellent judgment.
+Has relentlessly high standards (is never satisfied with the status quo).
+Is able to dive deep and is never out of touch with the details of the business or the technology.
+Expects and requires innovation of their team.
+Has passion and convictions and the innate ability to inspire passion in others.
+Strong results orientation.
+Thinks big.
+Key job responsibilities
+Write high-quality, efficient, and testable production code.
+Build highly available, secure distributed systems at Amazon scale
+Be an end-to-end technical owner of the services you build, including development, testing and support.
+Make a direct contribution to planning, design, implementation, testing, operations, and process improvement as a member of an Agile team.
+Be part of growing, tight-knit team within a wider community of experienced and knowledgeable engineers.
+A day in the life
+Our team is dedicated to supporting new members. We have a broad mix of experience levels and tenures, and we’re building an environment that celebrates knowledge sharing and mentorship. We care about your career growth and strive to assign projects based on what will help each team member develop into a better-rounded engineer and enable them to take on more complex tasks in the future.
+About The Team
+Diverse Experiences
+Amazon Security values diverse experiences. Even if you do not meet all of the preferred qualifications and skills listed in the job description, we encourage candidates to apply. If your career is just starting, hasn’t followed a traditional path, or includes alternative experiences, don’t let it stop you from applying.
+Why Amazon Security
+At Amazon, security is central to maintaining customer trust and delivering delightful customer experiences. Our organization is responsible for creating and maintaining a high bar for security across all of Amazon’s products and services. We offer talented security professionals the chance to accelerate their careers with opportunities to build experience in a wide variety of areas including cloud, devices, retail, entertainment, healthcare, operations, and physical stores.
+Work/Life Balance
+We value work-life harmony. Achieving success at work should never come at the expense of sacrifices at home, which is why flexible work hours and arrangements are part of our culture. When we feel supported in the workplace and at home, there’s nothing we can’t achieve.
+Inclusive Team Culture
+In Amazon Security, it’s in our nature to learn and be curious. Ongoing DEI events and learning experiences inspire us to continue learning and to embrace our uniqueness. Addressing the toughest security challenges requires that we seek out and celebrate a diversity of ideas, perspectives, and voices.
+Training and Career growth
+We’re continuously raising our performance bar as we strive to become Earth’s Best Employer. That’s why you’ll find endless knowledge-sharing, training, and other career-advancing resources here to help you develop into a better-rounded professional.
+Basic Qualifications
+Experience in development in the last 3 years, or experience in professional, non-internship software development
+Experience programming with at least one software programming language
+2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience
+Successful applicants must have the legal right to work in Ireland
+This role requires you to be a national of an EU member state
+Preferred Qualifications
+Bachelor's degree in computer science or equivalent
+Experience with full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations, or experience in development in the last 3 years
+Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (https://www.amazon.jobs/en/privacy_page) to know more about how we collect, use and transfer the personal data of our candidates.
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.
+Company
+- Amazon Web Services EMEA SARL (Irish Branch)
+Job ID: A3167862

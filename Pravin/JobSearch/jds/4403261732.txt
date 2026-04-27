@@ -1,0 +1,39 @@
+Who We Are
+At CarGurus (NASDAQ: CARG), our mission is to give people the power to reach their destination. We started as a small team of developers determined to bring trust and transparency to car shopping. Since then, our history of innovation and go-to-market acceleration has driven industry-leading growth. In fact, we’re the largest and fastest-growing automotive marketplace, and we’ve been profitable for over 15 years.
+What We Do
+The market is evolving, and we are too, moving the entire automotive journey online and guiding our customers through every step. That includes everything from the sale of an old car to the financing, purchase, and delivery of a new one. Today, tens of millions of consumers visit CarGurus.com each month, and ~30,000 dealerships use our products. But they're not the only ones who love CarGurus—our employees do, too. We have a people-first culture that fosters kindness, collaboration, and innovation, and empowers our Gurus with tools to fuel their career growth. Disrupting a trillion-dollar industry requires fresh and diverse perspectives. Come join us for the ride!
+Role Overview
+The International team is seeking a talented and driven Software Development Engineer to join CarGurus' new Dublin office and work on exciting product initiatives for our Canadian and UK markets and play a key role in establishing the office’s culture. In this role, you’ll be responsible for the full software development lifecycle – across both the frontend and backend – collaborating with Engineering and Product peers to design innovative solutions and tackle complex challenges for our dealer-facing products.
+We Are Looking For Candidates Who Are Able To Learn And Adapt Quickly, And Collaborate With Other Engineers To Deliver Solutions. Some Examples Of Potential Project Opportunities
+Building new, full-stack features for dealer products from the ground up
+Integrating with existing services and expanding functionality using React, TypeScript, and Java
+Implementing integrations with third-party APIs and partners
+As an engineer on this team, you will drive projects from conception to completion, working closely with other engineers and product partners to deliver impactful solutions for the international business. No need to be a car expert—we’re more interested in your passion for engineering and your ability to innovate!
+What You'll Do
+Collaborate with engineers and product managers across the organization to understand and solve new product requirements and tackle technical challenges.
+Help establish and grow CarGurus' Dublin engineering presence by contributing to team culture, practices, and standards.
+Work with Java, Spring Boot, React, TypeScript, AWS, and other modern technologies to build 2-sided marketplace products.
+Be deeply engaged in the full development lifecycle: designing, developing, testing, automated testing, deploying, maintaining, monitoring, and alerting.
+Play a critical role in implementing a design and service-oriented architecture for CarGurus International products.
+What You'll Bring
+2-3 years of software design and development experience, including strong OOP, Java, and Spring experience.
+Solid hands-on experience building dynamic, responsive user interfaces using React and TypeScript.
+A strong understanding of data structures, algorithms, and complexity analysis.
+Ability to write clean, well-tested, and efficient code that passes through code review with minimal comments. Additionally, provide high-quality code review guidance for others.
+Comfortable writing unit tests, investigating issues, and using observability tools to understand system health & performance.
+Self-led and motivated to proactively find answers and resolve blockers.
+Proactive communicator who raises questions, blockers, and continuous updates.
+Some hands-on experience with relational database systems.
+Knowledge of various design patterns and experience implementing them.
+Eagerness to learn and expand your capabilities through contribution and owning projects.
+Some experience with service-oriented architecture and distributed systems.
+Bonus: Experience with server-side TypeScript (especially Remix, though Next.js or Express are also great additions).
+The displayed range represents the expected annual base salary / On-Target Earnings (OTE) for this position. On-Target Earnings (OTE) is inclusive of base salary and on-target commission earnings, which applies exclusively to sales roles.
+Individual pay within this range is determined by work location and other factors such as job-related skills, experience, and relevant education or training.
+This annual base salary forms part of a comprehensive Total Rewards Package. In addition to benefits, this role may qualify for discretionary bonuses/incentives and Restricted Stock Units (RSUs).
+Position Pay Range
+€56.000—€77.000 EUR
+Working at CarGurus
+We reward our Gurus’ curiosity and passion with best-in-class benefits and compensation, including equity for all employees, both when they start and as they continue to grow with us. Our career development and corporate giving programs, as well as our employee resource groups (ERGs) and communities, help people build connections while making an impact in personally meaningful ways. A flexible hybrid model and robust time off policies encourage work-life balance and individual well-being. Thoughtful perks like daily free lunch, a new car discount, meditation and fitness apps, commuting cost coverage, and more help our people create space for what matters most in their personal and professional lives.
+We welcome all
+CarGurus strives to be a place to which people can bring the ultimate expression of themselves and their potential—starting with our hiring process. We do not discriminate based on race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation. We foster an inclusive environment that values people for their skills, experiences, and unique perspectives. That’s why we hope you’ll apply even if you don’t check every box listed in the job description. We also encourage you to tell your recruiter if you require accommodations to participate in our hiring process due to a disability so we can provide the appropriate support. We want to know what only you can bring to CarGurus.

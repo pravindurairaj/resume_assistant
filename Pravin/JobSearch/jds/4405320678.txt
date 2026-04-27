@@ -1,0 +1,89 @@
+eir evo talent is currently inviting applications for the position of
+Automation Test Lead
+. This is a
+permanent role based in Dublin
+offering a
+hybrid working arrangement with a minimum of two days onsite per week
+.
+Role Overview
+The Automation Test Lead will be a key member of the Test Function within the Project Management Office responsible for coordinating test activities across multiple projects delivered in both
+Agile, Waterfall and hybrid environments
+.This role requires a strong
+automation-first mindset
+, with responsibility for driving test strategy, governance, and execution across functional and automation teams.You will work closely with cross-functional stakeholders to ensure quality delivery, while also supporting continuous improvement in tooling, frameworks, and testing standards.
+Key Responsibilities
+Coordinate test activities across multiple concurrent projects
+Support the Test Manager with governance, reporting, and assurance activities
+Define and agree the
+automation strategy and approach
+Drive an
+automation-first delivery mindset
+across teams
+Design and support
+UI and API test automation frameworks
+Allocate work across test teams and track delivery against milestones
+Assist with test estimation and planning activities
+Monitor progress, risks, and issues; escalate where required
+Produce and distribute
+weekly test progress reports across the portfolio
+Collaborate with Functional Test Leads for cross-functional testing phases (e.g. regression)
+Ensure
+CSV compliance and documentation standards
+are met
+Support test scripting and execution where required during peak workload
+Contribute to continuous improvement of tools, processes, and frameworks
+Engage with stakeholders and delivery teams across Agile and Waterfall environments
+Qualifications & Experience
+Bachelor’s Degree in Computer Science, Information Systems, or related discipline (or equivalent experience)
+6+ years’ experience as an Automation Test Lead
+in large-scale enterprise environments
+Strong experience in
+SDLC, STLC, Agile, Waterfall, and hybrid delivery models
+7+ years’ experience in C# automation scripting
+4+ years’ experience testing REST APIs
+Strong experience with
+BDD/ATDD frameworks and acceptance testing practices
+Experience with
+CI/CD pipelines and Azure DevOps
+Experience working with
+source control systems
+Exposure to
+test automation frameworks and non-functional testing
+Experience in
+CSV / GxP regulated environments or ISO finance standards
+(advantageous)
+ISTQB certification (advantageous)
+Experience with
+ERP, CRM, WMS, eCommerce, mobile, SAP or HR systems
+(advantageous)
+Skills & Competencies
+Strong leadership and team coordination skills
+Excellent communication and stakeholder engagement abilities
+Ability to manage multiple teams and competing priorities
+Strong analytical and problem-solving capability
+High attention to quality, delivery, and governance standards
+Collaborative mindset with strong emotional intelligence
+Ability to influence and drive delivery under tight timelines
+About the Role
+This is an excellent opportunity for an experienced Automation Test Lead to join a high-performing team and play a key role in delivering complex transformation programmes within a structured and collaborative environment.
+For more information please apply here or contact
+Harleen Tora/ harleen(dot)tora(at)eirevo(dot)ie
+Ref:
+EET7758
+Candidates must be eligible to work full time and long term in the location specified or currently hold a valid appropriate long term work Visa to apply.
+eir business talent
+,
+eir business
+and our clients are equal opportunity employers who seeks to recruit and appoint the best available person for a job regardless of marital / civil partnership status, sex (including pregnancy), age, religion, belief, race, nationality and ethnic or national origin, colour, sexual orientation or disability.
+eir business talent
+,
+eir business
+and our clients apply all relevant Data Protection laws when processing your Personal Data.
+If you choose to apply to this opportunity and share your CV or other personal information with
+eir business talent,
+eir business
+and our clients, these details will be held by us in accordance with our privacy policy used by our recruitment team to contact you regarding this or other relevant opportunities at
+eir business talent
+and
+eir business
+.

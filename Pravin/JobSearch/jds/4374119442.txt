@@ -1,0 +1,42 @@
+Summary
+Yelp engineering culture is driven by our values: we’re a cooperative team that values individual authenticity and encourages creative solutions to problems. All new engineers deploy working code their first week, and we strive to broaden individual impact with support from managers, mentors, and teams. At the end of the day, we’re all about helping our users, growing as engineers, and having fun in a collaborative environment.
+Do you want to build and manage scaleable, self-healing, globally-distributed systems? Our Site Reliability engineers keep Yelp fast, available, and growing, connecting users to great local businesses. No matter how many times we get searched, scraped, scanned, spammed, pinged, paged, or queried, we keep our cool - and keep the site running smoothly.
+We work in both the dev and systems worlds, implementing key parts of the core architecture and supporting devs as they try to do the same. We get to tackle interesting challenges that you can only find at the kind of scale that serves over 100 million users per month.
+You'll work to empower product teams and developers: at Yelp, spinning up infrastructure should always be a git commit and a code review away: automation and self-service are at the core of what we do.
+This opportunity requires you to be located in the Republic of Ireland. We’d love to have you apply, even if you don’t feel you meet every single requirement in this posting. At Yelp, we’re looking for great people, not just those who simply check off all the boxes.
+What You'll Do
+Work closely with engineers in supporting new features and services.
+Build tools to monitor site stability and performance.
+Help ensure the reliability and scalability of our infrastructure, while maintaining platform SLOs.
+Troubleshoot site issues using industry-leading tools like Splunk, Prometheus and OpenTelemetry.
+Automate everything with Python, Puppet, Git, Jenkins, and Terraform and leveraging an extensive suite of AI tooling.
+Develop custom tools when off-the-shelf solutions don’t work at our scale and contribute upstream to open source projects.
+Participate in light on-call rotations - we have geographically distributed SRE teams for follow-the-sun support, which means nobody needs to be on-call 24h a day!
+What It Takes To Succeed
+Familiarity with Linux and an enthusiasm for learning more (we use Ubuntu but any distro is fine).
+Command of your favorite modern programming language: Python, Ruby, Go, Java, C++, etc.
+Hands-on experience with public cloud platforms (we use AWS, but Azure/GCP are fine).
+Practical background in Infrastructure as Code and Configuration Management (e.g., Terraform, Puppet, Ansible, or similar).
+Relevant experience with Linux containerisation and orchestration (e.g., Docker and Kubernetes).
+A solid understanding of fundamental technologies like TCP/IP, HTTP (transport, serving and load-balancing), and DNS, containerization & workload orchestration or datastores and streaming technologies.
+Exposure to monitoring concepts and best practices around performance, reliability and security.
+Excellent communication and documentation skills.
+An eagerness to ask questions, take initiative and learn everyday.
+What You'll Get
+Full responsibility for projects from day one, a collaborative team, and a dynamic work environment.
+Competitive salary, a pension scheme, and an optional employee stock purchase plan.
+25 days paid holiday (rising to 29 with service), plus one floating holiday.
+€150 monthly reimbursement to help cover remote working expenses.
+€86 caregiver reimbursement to support dependent care for families.
+Private health insurance, including dental and vision.
+Flexible working hours and meeting-free Wednesdays.
+Regular 3-day Hackathons, bi-weekly learning groups, and productivity spending to support and encourage your career growth.
+Opportunities to participate in digital events and conferences.
+€86 per month to use toward qualifying wellness expenses.
+Quarterly team offsites.
+Closing
+Yelp values diversity. We’re proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition, disability, or any other protected status.
+Notice to Northern Ireland Applicants
+A Basic criminal background check via AccessNI is required for employment. Yelp complies with the AccessNI Code of Practice. Having a criminal record will not necessarily prevent a candidate from working with Yelp. Yelp will consider the nature of the position together with the circumstances and background of the candidate's offences or other information contained on a disclosure certificate. AccessNI's Privacy Policy is available here. Yelp's Criminal Background Check Policy is available upon request.
+Note: Yelp does not accept agency resumes. Please do not forward resumes to any recruiting alias or employee. Yelp is not responsible for any fees related to unsolicited resumes.
+Recruiting and Applicant Privacy Notice

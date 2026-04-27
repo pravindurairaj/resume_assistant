@@ -1,0 +1,39 @@
+Business Analyst – Corporate Solutions Programme
+Location:
+Dublin 18 (Hybrid working model)
+Rate:
+€800 per day
+Contract Duration:
+12 months
+Role Overview
+We are seeking a highly experienced Business Analyst with strong Life & Pensions domain expertise to join our Corporate Solutions Programme on a 12‑month contract. This is a high-profile, strategic programme focused on transforming corporate life assurance and pension solutions through digital innovation and improved operational efficiency.
+The successful candidate will play a pivotal role in bridging business needs with technology delivery, ensuring requirements are clearly defined, validated, and successfully implemented across the programme.
+Key Responsibilities
+Requirements Gathering & Analysis
+Engage with business and technical stakeholders to elicit, document, and validate business and system requirements
+Analyse and document current-state and future-state business processes and workflows
+Solution Definition
+Translate business needs into clear business specifications and user stories for development teams
+Work closely with architects and developers to ensure proposed solutions are feasible, scalable, and aligned with business objectives
+Domain Expertise
+Apply in-depth knowledge of life assurance and pensions products, regulatory requirements, and operational processes
+Support initiatives across product configuration, policy administration, claims, billing, and customer servicing
+Stakeholder Engagement
+Facilitate workshops, walkthroughs, and feedback sessions with internal teams and third-party vendors
+Act as a trusted advisor to key stakeholders throughout the delivery lifecycle
+Testing & Validation
+Support test planning, execution, and defect management
+Assist with User Acceptance Testing (UAT) and ensure business sign-off on delivered solutions
+Documentation & Reporting
+Produce and maintain high-quality documentation including business requirements, process flows, and training materials
+Provide regular progress updates, highlighting risks, issues, and dependencies to programme leadership
+Skills & Experience
+Proven experience as a Business Analyst within Life & Pensions, ideally supporting group pension arrangements
+Strong understanding of life assurance products, pension administration, and relevant regulatory frameworks
+Experience working in Agile delivery environments with cross-functional technology teams
+Excellent communication, facilitation, and stakeholder management skills
+Proficient in tools such as Jira, Confluence, Visio, and the Microsoft Office Suite
+Preferred Qualifications & Experience
+Bachelor’s degree in Business, Finance, Information Systems, or a related discipline
+Experience with platforms such as LiFE400, FINEOS, Salesforce, or other life & pensions administration systems (highly advantageous)
+Familiarity with GDPR, IORP II, and other relevant regulatory standards

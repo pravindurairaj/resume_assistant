@@ -1,0 +1,72 @@
+Job Description
+Senior Director, Analyst – Data & Analytics and AI Transformation in Procurement
+(East Coast or Central – Canada OR UK & EUROPE)
+About the role:
+Gartner Analysts are industry thought leaders who create must-have research, market predictions and best practices for a broad range of world-leading organizations. A Senior Director serves as a leader within Gartner’s Business and Technology Insights (BTI) group, establishing oneself as a credible voice within their designated market at local, regional and global levels. Utilizing exceptional research and analytical skills, a Senior Director plays a significant role in producing pragmatic and provocative research which Gartner clients consume and apply to propel their business toward key objectives. They are a trusted source of advice for clients, reinforcing Gartner’s value every day by engaging them via in-person meetings, virtual meetings, sales support visits and Gartner conferences to discuss complex client challenges and offer appropriate recommendations.
+What you will do:
+Create innovative, thought provoking, and highly leveraged “must-have research” content
+Develop new research and ideas through thought leadership and offer compelling, actionable approaches to client's needs and requests that accelerate the client's ability to act
+Be capable of taking strong positions supported by fact-based evidence as part of mission critical research for Gartner clients
+Develop in-depth analysis to identify the root cause of a client’s barriers or overall needs and reframe thinking to drive strategy forward
+Demonstrate thought leadership in establishing research positions across a team of analysts
+Bring provocative, independent insights to Gartner leaders that can evolve the course of a research agenda
+Research, analyze and predict market trends and shifts to provide clients and vendors with actionable insights
+Provide clients and prospects with actionable advice aligned to their designated content area via virtual or face-to-face interactions
+Create and deliver high value presentation materials on and off stage for Gartner events, industry and professional association conferences, and client briefings
+Support Research and Sales: Provide sales support serving as voice of the market to help research teams create content and to drive engagement with clients to make progress against their critical priorities to grow their business
+Provide high quality and timely research content peer review
+Build credibility as an industry expert to represent Gartner research, methodology and strategy
+Actively participate in innovation, ideation, and research discussions and collaborate effectively with peers in the research community
+Identify research process improvements or develop new processes that help the team and Research & Advisory provide excellent service delivery
+Be a mentor and a coach by supporting more junior team members
+Be client-centric while actively seeking to help clients engage regularly and often with Gartner research and interactions
+Subject Matter Expertise
+Demonstrated experience leading end-to-end AI transformation initiatives (People, Process, Technology, and Data) within procurement functions, including opportunity assessment, solution design, implementation and change management, and value realization.
+Proven track record of integrating AI technologies (e.g., machine learning, NLP, intelligent automation, LLMs, and/or agents) into procurement processes such as sourcing, contract management, supplier risk, and spend analytics.
+Ability to articulate and quantify the business impact and ROI of AI adoption in procurement (e.g., cost savings, process efficiency, compliance, supplier innovation).
+Demonstrated success in designing and executing procurement strategies that leverage advanced analytics, automation, and AI to deliver measurable business outcomes (e.g., cost reduction, risk mitigation, supplier innovation).
+Deep expertise in building and scaling data foundations necessary for AI in procurement, including data governance, data quality, master data management, and data integration.
+Earlier career hands-on experience architecting and deploying advanced analytics solutions for procurement, such as predictive analytics, scenario modeling, and real-time dashboards.
+Familiarity with procurement data models, taxonomies, and the use of structured/unstructured data to drive actionable insights.
+Practical knowledge of leading AI/ML platforms (e.g., Microsoft Copilot, AWS SageMaker, Azure ML, Google AI), analytics tools (e.g., Tableau, Power BI, Alteryx), and procurement technology (e.g., SAP Ariba, Coupa).
+Experience collaborating with data scientists, engineers, and IT to operationalize AI-driven use cases in procurement environments.
+Demonstrated ability to influence and advise Chief Procurement Officers, CIO’s, CFO’s, and executive teams on AI and analytics strategy, roadmap development, and transformation governance.
+Experience leading cross-functional teams through the transformation of making Procurement into an AI Native Procurement function, including the organizational change required for an AI and data-driven procurement function, including upskilling, process redesign, and stakeholder engagement.
+Recognized as a thought leader in AI for procurement, with a portfolio of published research, industry presentations, or advisory engagements.
+Up-to-date knowledge of AI trends, regulatory considerations, and best practices in procurement transformation.
+Deep expertise in AI/ML trends and experience applying those trends to redefine the future of procurement.
+What you will need:
+Bachelor's degree or equivalent experience; Graduate degree preferred
+12+ years of relevant field or industry experience
+Demonstrate executive presence; can immediately establish credibility with executives and additional stakeholders
+Strong organizational skills; ability to work under tight deadlines and produce high quality deliverables
+Demonstrate excellence in research and writing ability
+Strong written and verbal proficiency, analytical and presentation skills; ability to engage clients and respond effectively to questions
+Proficient in analyzing and synthesizing data; can effectively apply patterns and frameworks while drawing and defending conclusions to client challenges
+Strong communicator who is able to explain complex concepts concisely and simply
+Subject matter expert comfortable presenting at large and small-scale speaking engagements
+Strong business and financial acumen
+Deep knowledge of the global and competitive landscape within subject area as well as the interplay in that market
+Ability to work independently, while also being intrinsically motivated to collaborate across teams and support the workflow of others, in a multicultural global team
+Learning agile and adept with navigating highly matrixed environments
+Ability to represent Gartner's research methodology and strategies effectively at all levels
+Willingness and ability to travel up to 25% (where applicable)
+Who are we?
+At Gartner, Inc. (NYSE:IT), we guide the leaders who shape the world.
+Our mission relies on expert analysis and bold ideas to deliver actionable, objective business and technology insights, helping enterprise leaders and their teams succeed with their mission-critical priorities.
+Since our founding in 1979, we’ve grown to 21,000 associates globally who support ~14,000 client enterprises in ~90 countries and territories. We do important, interesting and substantive work that matters. That’s why we hire associates with the intellectual curiosity, energy and drive to want to make a difference. The bar is unapologetically high. So is the impact you can have here.
+What makes Gartner a great place to work?
+Our vast, virtually untapped market potential offers limitless opportunities – opportunities that may not even exist right now – for you to grow professionally and flourish personally. How far you go is driven by your passion and performance.
+We hire remarkable people who collaborate and win as a team. Together, our singular, unifying goal is to deliver results for our clients.
+Our teams are inclusive and composed of individuals from different geographies, cultures, religions, ethnicities, races, genders, sexual orientations, abilities and generations.
+We invest in great leaders who bring out the best in you and the company, enabling us to multiply our impact and results. This is why, year after year, we are recognized worldwide as a great place to work.
+What do we offer?
+Gartner offers world-class benefits, highly competitive compensation and disproportionate rewards for top performers.
+In our hybrid work environment, we provide the flexibility and support for you to thrive — working virtually when it's productive to do so and getting together with colleagues in a vibrant community that is purposeful, engaging and inspiring.
+Ready to grow your career with Gartner? Join us.
+The policy of Gartner is to provide equal employment opportunities to all applicants and employees without regard to race, color, creed, religion, sex, sexual orientation, gender identity, marital status, citizenship status, age, national origin, ancestry, disability, veteran status, or any other legally protected status and to seek to advance the principles of equal employment opportunity.
+Gartner is committed to being an Equal Opportunity Employer and offers opportunities to all job seekers, including job seekers with disabilities. If you are a qualified individual with a disability or a disabled veteran, you may request a reasonable accommodation if you are unable or limited in your ability to use or access the Company’s career webpage as a result of your disability. You may request reasonable accommodations by calling Human Resources at +1 (203) 964-0096 or by sending an email to ApplicantAccommodations@gartner.com.
+Job Requisition ID:109437
+By submitting your information and application, you confirm that you have read and agree to the country or regional recruitment notice linked below applicable to your place of residence.
+Gartner Applicant Privacy Link: https://jobs.gartner.com/applicant-privacy-policy
+For efficient navigation through the application, please only use the back button within the application, not the back arrow within your browser.

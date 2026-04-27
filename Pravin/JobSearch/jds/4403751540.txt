@@ -1,0 +1,44 @@
+Job Summary
+We are seeking a Senior Site Reliability Engineer (SRE) with strong expertise in AWS cloud infrastructure, containerised platforms, and Azure DevOps CI/CD pipelines. The successful candidate will focus on improving system reliability, availability, performance, and scalability, while enabling engineering teams to deliver high-quality services efficiently.
+This role combines engineering and operational excellence, with a focus on automation, observability, scalability, and resilience across cloud-native environments. As a senior engineer, you will drive engineering-led solutions to reduce operational toil, enhance system reliability, and promote DevOps and SRE best practices.
+Note: This is a reliability-focused engineering role with on-call responsibilities and involvement in platform modernisation initiatives.
+Key Responsibilities
+Design, implement, and manage highly available and scalable infrastructure on AWS.
+Build, maintain, and optimise DevOps Pipelines (CI/CD) for automated build, test, and deployment processes.
+Implement end-to-end CI/CD workflows, including multi-stage pipelines, approvals, and release strategies.
+Manage and support Windows (IIS, .NET) and Linux-based production systems.
+Deploy, manage, and optimise containerised applications using Docker and Kubernetes (EKS/AKS).
+Implement Infrastructure as Code (IaC) using Terraform, CloudFormation, or ARM
+Develop and maintain automation scripts using PowerShell, Bash, or Python.
+Define and monitor SLIs, SLOs, and SLAs to ensure system reliability.
+Implement robust monitoring, logging, and alerting solutions (CloudWatch, Prometheus, Grafana, Azure Monitor).
+Lead incident management, troubleshooting, and root cause analysis (RCA) for production issues.
+Drive performance tuning and capacity planning for applications and infrastructure.
+Collaborate with development teams to improve deployment strategies (blue-green, canary releases).
+Ensure security, compliance, and best practices across CI/CD pipelines and infrastructure.
+Required Skills & Experience
+8+ years of experience in Site Reliability Engineering / DevOps / Infrastructure Engineering
+Strong hands-on experience with AWS services (EC2, S3, RDS, VPC, IAM, ELB, Auto Scaling, CloudWatch)
+Deep expertise in Azure DevOps Pipelines (CI/CD), including YAML pipelines and release automation
+Experience designing multi-stage pipelines and deployment strategies
+Expertise in Windows Server administration, including IIS and .NET application support
+Strong experience with Linux system administration
+Hands-on experience with Docker and Kubernetes (EKS/AKS)
+Experience with Infrastructure as Code (Terraform, CloudFormation, or ARM templates)
+Strong scripting skills in PowerShell (mandatory) and Bash/Python
+Experience with monitoring and logging tools (Prometheus, Grafana, ELK, CloudWatch)
+Solid understanding of networking, security, and cloud architecture principles
+Preferred Qualifications
+Experience with hybrid cloud or multi-cloud environments
+Knowledge of Active Directory, Group Policy, and enterprise Windows environments
+Familiarity with Helm, GitOps practices, or service mesh technologies
+Experience with performance testing and tuning
+Relevant certifications (AWS, Kubernetes, Azure DevOps)
+Key Competencies / Characteristics
+Reliability-driven: Focused on uptime, performance, and system resilience
+Automation-first mindset: Continuously reduces manual effort and operational toil
+Ownership mentality: Takes end-to-end responsibility from design through production
+Strong communicator: Clearly articulates incidents, RCA outcomes, and technical concepts
+Collaborative: Works effectively with platform, security, and application teams
+Mentorship mindset: Actively supports and develops junior team members
+Continuous learner: Keeps up with evolving SRE practices and cloud-native technologies

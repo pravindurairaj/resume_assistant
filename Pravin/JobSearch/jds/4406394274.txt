@@ -1,0 +1,61 @@
+Location:
+Dublin, Ireland
+Work Arrangement:
+Hybrid –
+minimum 3 days per week office attendance required
+Reporting to:
+Director of Quality Assurance
+About Daon
+Daon is a global leader in the defence against digital identity fraud and AI-generated synthetic identities. For over a quarter of a century, we have partnered with governments and leading enterprises to deliver secure, seamless identity experiences across financial services, telecommunications, healthcare, travel, and critical infrastructure.
+Our
+TrustX
+platform enables organisations to orchestrate secure, scalable, cross-channel identity workflows, supporting identity verification, biometric authentication, and lifecycle management across complex environments. More than two billion identities worldwide have been safeguarded by Daon technology.
+Recognised as a leading provider by multiple analyst firms including Gartner®, Kuppinger Cole, and Frost & Sullivan®, Daon is at the forefront of shaping the future of identity security.
+Role overview
+As a Senior Test Automation Engineer on our TrustX SaaS platform, you will design, develop, and maintain automated tests that ensure the reliability, scalability, and correctness of our identity and authentication systems. You’ll work closely with backend, frontend, mobile, DevOps, architects, and service delivery teams to validate end‑to‑end system behavior across multiple environments.
+This role is ideal for a strong engineer who understands how distributed systems fit together - not someone limited to UI testing. You should be able to design integration tests, API tests, automation workflows, data‑driven tests, and environment‑aware validation routines for a cloud‑native SaaS product.
+You will also be expected to use AI‑powered tools such as GitHub Copilot, AI-driven test generation, and automated test analysis to increase speed, coverage, and efficiency.
+What you will do
+:
+Automation Framework & Test Development
+Design, build, and enhance automated test frameworks covering API, UI, integration, performance, and regression testing.
+Develop automated test suites using modern tools such as JUnit, TestNG, Selenium, Cypress, Playwright, RestAssured, or similar.
+Write tests that validate distributed systems, multi-step workflows, asynchronous operations, and cross‑service interactions.
+Collaborate with backend, frontend, and mobile engineers to understand system flows and build meaningful end‑to‑end test coverage.
+Validate API contracts, authentication flows, session behavior, and data integrity across microservices.
+Ensure tests work across dev, QC, staging, and production-like environments.
+Use GitHub Copilot and other AI tools to generate test cases, automation scaffolding, and documentation.
+Adopt AI-powered techniques for identifying missing coverage, edge‑case exploration, and regression analysis.
+Help the QA team establish best practices for AI‑assisted test creation and maintenance.
+Build automated health checks and smoke tests for release pipelines.
+Work with DevOps to instrument logs, metrics, and traces to support test diagnostics and troubleshoot failures.
+Participate in performance and load testing efforts, analyzing bottlenecks and system-level issues.
+Work closely with service delivery managers to validate release readiness and drive quality gates for deployments.
+Collaborate with architects and developers on design approaches that improve testability and maintainability.
+Support P1 incident investigations through automated reproduction, diagnostics, and post‑incident test coverage improvements.
+Participate in code reviews and contribute to best coding practices within the QA automation group.
+What you have:
+5+ years of experience in test automation for enterprise or SaaS products.
+Strong engineering skills with experience using Java, TypeScript/JavaScript, or similar languages for automation.
+Hands‑on experience with test frameworks such as JUnit/TestNG, Selenium/WebDriver, Cypress, Playwright, RestAssured, or equivalents.
+Solid understanding of how distributed systems work, including APIs, microservices, authentication, and message flows.
+Experience testing SaaS applications in cloud environments (AWS preferred) using Docker/Kubernetes.
+Familiarity with CI/CD pipelines and integrating automated tests into GitHub Actions, Jenkins, or similar systems.
+Strong debugging skills, including analyzing logs, traces, and service interactions.
+Ability to understand system architecture diagrams, API contracts, and data models.
+Willingness to adopt AI‑powered test development tools as part of your daily workflow.
+Strong communication skills and the ability to work closely with multiple engineering teams.
+Degree in Computer Science/Engineering or equivalent real‑world experience.
+Nice to Have
+Experience with performance testing tools such as Locust, Gatling, or JMeter.
+Security testing (OWASP awareness, API hardening, authentication/authorization validation).
+Experience in identity, biometrics, authentication, or other high‑security domains.
+Experience with micro‑frontend testing, mobile testing, or contract testing tools.
+What we offer
+:
+Work in the rapidly growing fields of identity verification, authentication, biometrics, telephony, and fraud.
+The opportunity to significantly shape and improve the quality framework of our flagship SaaS offering.
+Competitive salary and benefits.
+A flexible, supportive environment that respects work/life balance.
+Join the brightest minds from around the globe as we build the future of digital identity!
+Daon is an Equal Opportunity Employer and is committed to fostering an inclusive and diverse workplace. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or expression, national origin, age, disability, or any other legally protected status. We celebrate diversity and are dedicated to creating an environment where all employees feel valued, respected, and supported.

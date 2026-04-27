@@ -1,0 +1,53 @@
+Company Description
+PartnerRe is a leading, privately owned, multi-line global reinsurer with a reputation of financial stability and strength, and a commitment to rebuilding businesses and communities after risk events around the world.
+Our mission is to continue to be a financially stable and predictable business partner, supporting our clients with solutions tailored to their needs, delivering superior returns to our owner, providing rewarding opportunities for our people and making a positive contribution to society. To achieve this, we live by our values of Integrity, Performance, Collaboration, Straightforward Communication and Respect and Care.
+Core to The PartnerRe Experience is our global nature. No matter where you sit in the company, you are part of something bigger. Our teams represent our truly international mindset, forging connections across office locations and all levels of the organization and building a network of mutual success. The result is a day-to-day experience that will allow you to:
+Shape your own career
+Grow in a supportive environment
+Connect with a community of experts
+Make an impact
+View Home - PartnerRe Experience e-book to find out more about what it’s like to work at PartnerRe.
+We are always looking for bright, proactive individuals to join our team!
+Please follow our Careers page for all updates on new positions. We look forward to receiving your application.
+PartnerRe is an equal opportunities employer.
+Please join our company LinkedIn Page for all updates on new positions that are coming live.
+Job Description
+Job Summary:
+The Data Platform Engineer is responsible for building, optimizing and maintaining PartnerRe’s enterprise data platform, with a primary focus on Snowflake engineering. The role involves developing scalable SQL-based ETL/ELT pipelines, enabling reliable data ingestion using StreamSets and Openflow, and supporting secure dataset sharing through Snowflake’s native data sharing and marketplace capabilities. This role works closely with data architects, analytics teams, and platform engineers to deliver high-quality, performant data solutions that support critical business functions including Underwriting, Finance, and Risk.
+About The Role
+Design, develop, and optimize data pipelines, data models, and ELT transformations in Snowflake.
+Build and maintain SQL-based ETL/ELT pipelines delivering data into Snowflake.
+Develop and maintain data ingestion pipelines using StreamSets and Openflow.
+Implement Snowflake Secure Data Sharing and support internal data marketplace capabilities for sharing datasets across teams.
+Optimize Snowflake query performance, compute usage, and storage efficiency.
+Monitor and troubleshoot data pipeline failures, performance issues, and data quality problems.
+Implement monitoring, logging, and automation to ensure reliable data platform operations.
+Collaborate with data architects, BI teams, and platform engineers to support enterprise data initiatives.
+Qualifications
+Technical Skills
+Strong hands-on experience with Snowflake data platform engineering.
+Advanced SQL development and performance optimization.
+Experience designing and building ETL/ELT data pipelines.
+Experience with StreamSets and Openflow or similar data integration tools.
+Experience implementing Snowflake Secure Data Sharing or dataset sharing frameworks.
+Understanding of data warehousing architecture and data modelling.
+Experience with data pipeline orchestration, monitoring, and troubleshooting.
+Additional Skills (Preferred)
+Experience working in Linux environments.
+Familiarity with containerized environments (Docker, Kubernetes, or OpenShift).
+Experience working with cloud storage platforms such as Azure Blob Storage.
+Soft Skills & Competencies
+Strong analytical and problem-solving skills.
+Ability to work effectively in complex enterprise data environments.
+Strong communication and collaboration across technical and business teams.
+High attention to detail and commitment to data quality and reliability.
+Proactive mindset with strong ownership of platform components and data solutions.
+Education & Experience
+Bachelor’s degree in computer science, Information Systems, or related field (or equivalent practical experience).
+6+ years of experience in data platform operations, data engineering, or related support functions.
+Demonstrated experience building Snowflake-based data solutions and scalable data pipelines.
+Additional Information
+:
+PartnerRe provides a working environment in which diversity is valued, where all employees feel welcome, respected, and empowered to perform at their best. We invite you to learn more about D&I at PartnerRe.
+Thank you,
+PartnerRe Hiring Team

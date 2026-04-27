@@ -88,7 +88,7 @@ def print_summary_table(results: list):
     print(f"{'#':<4} {'Company':<28} {'Title':<25} {'Fit':<5} {'Match':<6} {'Status'}")
     print('-' * 80)
     for r in results:
-        status_icon = '✓' if r['status'] == 'completed' else '✗' if r['status'] == 'failed' else '⊘'
+        status_icon = 'OK' if r['status'] == 'completed' else 'FAIL' if r['status'] == 'failed' else 'SKIP'
         print(
             f"{r['index']:<4} {r['company'][:27]:<28} {r['title'][:24]:<25} "
             f"{r['fit']:<5} {r.get('match_pct', '-'):<6} {status_icon} {r['status']}"
@@ -192,16 +192,16 @@ def main():
             # Flag for LLM polish
             if fit >= args.llm_polish_above:
                 result_entry['needs_review'] = True
-                print(f"         → Flagged for LLM review (fit={fit}%)")
+                print(f"         -> Flagged for LLM review (fit={fit}%)")
 
             # Log to xlsx
             run_log(user, job, report)
-            print(f"         → Done (match: {report.get('match_pct', 0)}%)")
+            print(f"         -> Done (match: {report.get('match_pct', 0)}%)")
 
         except Exception as e:
             result_entry['status'] = 'failed'
             result_entry['error'] = str(e)
-            print(f"         → FAILED: {e}")
+            print(f"         -> FAILED: {e}")
 
         results.append(result_entry)
 

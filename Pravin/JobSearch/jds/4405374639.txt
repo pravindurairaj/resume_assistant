@@ -1,0 +1,27 @@
+Overview
+As a Production Support Engineer, you will join a highly technical, business-critical Production Support team responsible for maintaining and enhancing trading systems in a fast-paced environment. The team plays a key role in ensuring system stability, scalability, and performance across global trading operations.
+You will collaborate closely with traders, development, and infrastructure teams to support live trading environments, respond to incidents, and drive continuous improvement in system reliability, monitoring, and deployment practices. This is a role combining production support and engineering, requiring both strong troubleshooting capability and the ability to build, automate, and improve systems.
+In This Role You Will
+Provide technical support to trading environments, troubleshooting complex issues and resolving incidents in a time-sensitive setting.
+Build and improve automation tools to reduce manual intervention and increase system reliability.
+Deploy, maintain, and monitor custom trading applications to ensure stability, performance, and availability.
+Contribute to and deliver project work, including system optimisation, configuration improvements, and infrastructure upgrades.
+Act as a key point of contact between development, infrastructure, and business teams to support production.
+Diagnose and resolve application and system issues through log analysis and investigation of system behaviour and workflows.
+Maintain and enhance monitoring and alerting tools to proactively detect and respond to issues.
+Review incidents to identify trends and implement improvements to increase automation and operational efficiency.
+Develop and maintain documentation, support procedures, and best practices.
+Assist in managing system capacity, resilience, and scalability to support business growth.
+What We're Looking For
+1+ year of experience in production engineering, development or a similar technical role.
+Hands-on experience with scripting or development (e.g. Python, Powershell or similar) with an automation and tooling focus.
+Strong troubleshooting and analytical skills, with the ability to investigate issues through logs and system behaviour.
+Experience working with distributed systems, including understanding of networking fundamentals and system interactions.
+Experience with scripting or automation (e.g. Python, PowerShell, or similar).
+Exposure to monitoring and alerting tools (e.g. ELK stack, CheckMk, Nagios).
+Familiarity with database systems and data-driven applications.
+Experience working with ticketing systems and managing multiple concurrent support requests effectively while under pressure.
+Strong communication skills, with the ability to clearly explain technical concepts to both technical and non-technical stakeholders.
+Willing to support shift work and on-call responsibilities.
+Experience in financial systems or trading environments is beneficial but not essential.
+Susquehanna is an equal opportunity employer. If you need assistance and/or a reasonable accommodation due to a disability during the application or recruitment process, please contact us.

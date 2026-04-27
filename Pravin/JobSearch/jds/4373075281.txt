@@ -1,0 +1,39 @@
+Overview
+Susquehanna is a global quantitative trading firm powered by scientific rigor, curiosity, and innovation. Our culture is intellectually driven and highly collaborative, bringing together researchers, engineers, and traders to design and deploy impactful strategies in our systematic trading environment. To meet the unique challenges of global markets, Susquehanna applies machine learning and advanced quantitative research to vast datasets in order to uncover actionable insights and build effective strategies. By uniting deep market expertise with cutting-edge technology, we excel in solving complex problems and pushing boundaries together.
+At Susquehanna International Group, our technologists play a critical role in shaping the future of electronic trading. We build high-performance systems designed to compete in some of the most demanding and latency-sensitive markets in the world. Our developers collaborate closely with quantitative researchers and infrastructure teams to solve complex technical and strategic problems that drive significant business impact.
+We are looking for a full-stack developer with strong proficiency in C#/.NET to join a fast-paced, iterative development team delivering business-critical systems. This role suits a pragmatic technologist who understands end-to-end system impact, communicates clearly, and delivers business value quickly without compromising long-term stability.
+Successful candidates balance technical excellence with practical decision-making, take ownership of their work, and collaborate closely with both technical and business stakeholders.
+Key Responsibilities
+Design, build, and maintain robust full-stack applications using C#/.NET and related technologies
+Operate in an iterative development environment using lightweight specifications and fast feedback loops
+Collaborate closely with traders, business users, support teams, and fellow developers
+Contribute to system and application architecture with a focus on scalability, resilience, and performance
+Take ownership of systems across the full lifecycle, from requirements and design through to production support
+Support production environments at 2nd level, ensuring system stability and prioritising operational improvements
+Participate actively in design discussions, reviews, and knowledge-sharing sessions
+Apply pragmatic decision-making guided by speed, capacity, stability, and risk
+What We're Looking For
+Skills and Experience
+Proficiency in C#/.NET and WPF
+Experience in at least one additional programming language (e.g. Python or JavaScript)
+Solid understanding of software design, debugging, and problem solving
+Experience working with distributed systems and business-critical applications
+Familiarity with modern development tools and practices (e.g. Git-based workflows, CI/CD)
+Experience working across the full software development lifecycle, including production support
+Strong written and verbal communication skills, particularly in collaborative, fast-moving environments
+Personal Attributes
+Pragmatic and delivery-focused, without sacrificing code quality or long-term maintainability
+Strong sense of ownership and accountability
+Clear, concise communicator with good judgment on when and how to engage others
+Curious, adaptable, and motivated to understand both technical systems and business context
+Collaborative, professional, and resilient under pressure
+Nice to Have
+Experience in financial, trading, or time-sensitive environments
+Exposure to cloud platforms, containerisation, or system monitoring
+Experience with databases and writing complex queries
+Experience in software performance tuning for high throughput or low latency
+Experience contributing to documentation, mentoring, or engineering standards
+Susquehanna is a global quantitative trading firm powered by scientific rigor, curiosity, and innovation. Our culture is intellectually driven and highly collaborative, bringing together researchers, engineers, and traders to design and deploy impactful strategies in our systematic trading environment. To meet the unique challenges of global markets, Susquehanna applies machine learning and advanced quantitative research to vast datasets in order to uncover actionable insights and build effective strategies. By uniting deep market expertise with cutting-edge technology, we excel in solving complex problems and pushing boundaries together.
+Equal Opportunity Statement
+We’re committed to building a diverse and inclusive workplace. We encourage candidates from all backgrounds to apply and are happy to provide reasonable accommodations during the hiring process.
+If you're a recruiting agency and want to partner with us, please reach out to recruiting@sig.com. Any resume or referral submitted in the absence of a signed agreement will not be eligible for an agency fee.

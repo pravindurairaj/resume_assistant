@@ -1,0 +1,55 @@
+The Role
+The Senior Data Scientist is a key contributor within the Pricing AI squad, responsible for designing, validating, and operating pricing models used in airline dynamic pricing and revenue optimisation. This is a hands-on, delivery-focused role with direct exposure to airline clients and senior internal stakeholders.
+The role combines advanced analytical and modelling work with strong ownership of model behaviour across UAT, go-live, and production. As the Pricing AI product matures, the role is expected to contribute to shaping data science standards and, in future phases, support the development of more junior team members.
+Key Responsibilities
+Pricing model development
+Design, build, and maintain pricing and optimisation models supporting airline dynamic pricing use cases.
+Perform detailed analysis of demand, elasticity, constraints, and commercial objectives.
+Develop and validate features suitable for real-time and batch decisioning.
+Ensure models are robust across edge cases and production traffic patterns.
+Experimentation and evaluation
+Define offline evaluation strategies and success metrics aligned with airline commercial goals.
+Design, analyse, and interpret experiments such as A/B tests, shadow runs, and back-testing.
+Translate experimental results into clear recommendations for Product and client stakeholders.
+Support controlled rollouts, model promotions, and rollbacks where required.
+Production and UAT support
+Own model behaviour during UAT and go-live phases, including rapid diagnosis and remediation.
+Work closely with Engineering to productionise models with appropriate performance and latency characteristics.
+Support monitoring of model outputs, data quality, and drift.
+Ensure modelling decisions and assumptions are documented and auditable.
+Client and stakeholder engagement
+Act as a data science point of contact in client-facing discussions related to pricing behaviour and performance.
+Explain model outcomes, trade-offs, and limitations clearly to non-technical audiences.
+Support responses to client queries during UAT, trials, and early production phases.
+Incorporate client feedback into model improvements in a controlled and evidence-based manner.
+Ways of working and standards
+Apply disciplined, reproducible data science practices including peer review and documentation.
+Contribute to shared modelling patterns, libraries, and evaluation approaches.
+Identify opportunities to improve reliability, transparency, and operational readiness of models.
+As the team scales, contribute to onboarding and technical guidance for more junior data scientists.
+Success indicators
+Pricing models perform reliably across UAT and production environments.
+Reduced client escalations related to pricing behaviour or model outcomes.
+Clear experimental evidence supporting pricing decisions and roadmap direction.
+Faster diagnosis and resolution of model-related issues during releases.
+Increased confidence from airline stakeholders in Pricing AI recommendations.
+Well-documented, repeatable modelling approaches suitable for scale.
+Required Experience
+Background in pricing, revenue management, demand modelling, or optimisation (airline or adjacent industries preferred).
+Solid grounding in statistics, machine learning, and experimental design.
+Experience working with high-volume, transactional or near real-time systems.
+Proven ability to work directly with clients and senior stakeholders.
+Comfortable collaborating with software engineers on production systems.
+Calm, structured approach under UAT and go-live pressure.
+Desirable Experience
+Airline dynamic pricing or revenue management domain experience.
+Experience with model explainability and governance in commercial settings.
+Familiarity with MLOps practices, monitoring, and model lifecycle management.
+Exposure to large-scale experimentation platforms or causal inference methods.
+Working model
+Hybrid and outcome-focused.
+Strong emphasis on reliability, transparency, and client confidence.
+Small, high-ownership squad with close collaboration across Data Science, Engineering, and Product.
+Scope expected to evolve as the Pricing AI product and team mature.
+About Datalex
+Datalex is a market leader in airline e-commerce solutions. Datalex's Stellex product suite, launched in 2024, gives airlines the tools they need to drive revenue and profit as digital retailers. Datalex has a strong track record working with some of the most innovative airline brands worldwide, such as Air China, Air Macau, Air Transat, Aer Lingus, easyJet, and Edelweiss. The Group is headquartered in Dublin, Ireland, and maintains offices across Europe, the Americas, and Asia. Learn more at www.datalex.com

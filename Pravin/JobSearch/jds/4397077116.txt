@@ -1,0 +1,45 @@
+Our Purpose
+Mastercard powers economies and empowers people in 200+ countries and territories worldwide. Together with our customers, we’re helping build a sustainable economy where everyone can prosper. We support a wide range of digital payments choices, making transactions secure, simple, smart and accessible. Our technology and innovation, partnerships and networks combine to deliver a unique set of products and services that help people, businesses and governments realize their greatest potential.
+Title And Summary
+Lead Site Reliability Engineer
+The RiskPS BizOps team is looking for a Site Reliability Engineer who can help us solve problems, implement automation, and leverage best practices.
+Are you a born problem solver who loves to figure out how something works?
+Are you a detail -oriented individual who enjoys complex problem solving?
+Do you love determining the correct actions required to fix a problem?
+Do you have a low tolerance for manual work and look to automate everything you can?
+Business Operations is leading the Site Reliability Engineering (SRE) transformation at Mastercard through our tooling and by being an advocate for change & standards throughout the development, quality, release, and product organizations. We need team members with an appetite for change and pushing the boundaries of what can be done with automation. Experience in working across development, operations, and product teams to prioritize needs and to build relationships is a must.
+Mission
+The role of business operations is to be the production readiness steward for the platform. This is accomplished by closely partnering with developers to design, build, implement, and support technology services. A business operations engineer will ensure operational criteria like system availability, capacity, performance, monitoring, self-healing, and deployment automation are implemented throughout the delivery process. Business Operations plays a key role in leading the Site Reliability Engineering (SRE) transformation at Mastercard through our tooling and by being an advocate for change and standards throughout the development, quality, release, and product organizations.
+We accomplish this transformation through supporting daily operations with a hyper focus on triage and then root cause by understanding the business impact of our products. The goal of every biz ops team is to shift left to be more proactive and upfront in the development process, and to proactively manage production and change activities to maximize customer experience and increase the overall value of supported applications. Biz Ops teams also focus on risk management by tying all our activities together with an overarching responsibility for compliance and risk mitigation across all our environments. A biz ops focus is also on streamlining and standardizing traditional application specific support activities and centralizing points of interaction for both internal and external partners by communicating effectively with all key stakeholders.
+Ultimately, the role of biz ops is to align Product and Customer Focused priorities with Operational needs. We regularly review our run state not only from an internal perspective, but also understanding and providing the feedback loop to our development partners on how we can improve the customer experience of our applications.
+For all team members:
+Engage in and improve the whole lifecycle of services—from inception and design, through deployment, operation and refinement.
+Analyze ITSM activities of the platform and provide feedback loop to development teams on operational gaps or resiliency concerns
+Support services before they go live through activities such as system design consulting, capacity planning and launch reviews.
+Maintain services once they are live by measuring and monitoring availability, latency and overall system health.
+Scale systems sustainably through mechanisms like automation and evolve systems by pushing for changes that improve reliability and velocity.
+Practice sustainable incident response and blameless postmortems.
+Take a holistic approach to problem solving, by connecting the dots during a production event thru the various technology stack that makes up the platform, to optimize mean time to recover
+Work with a global team spread across tech hubs in multiple geographies and time zones
+Share knowledge and mentor junior resources
+Qualifications
+BS degree in Computer Science or related technical field involving coding (e.g., physics or mathematics), or equivalent practical experience.
+Bachelor’s degree in Information Technology, Computer Science or equivalent work experience.
+Experience In a Financial Environment Preferred.
+Analytical/problem solving and planning skills.
+The ability to organize, multi-task and prioritize work based on current business needs.
+Possess strong communication skills -- both verbal and written.
+Strong relationship skills, collaborative skills and customer service skills.
+6+ Years of experience in the following is required: UNIX, scripting, Oracle, SQL skills
+We support many different stakeholders. Experience in dealing with difficult situations and making decisions with a sense of urgency is needed.
+Experience in one or more of the following is preferred: C, C++, Java, Python, Go, Perl or Ruby.
+Experience in Monitoring tools like Splunk , Dynatrace , Blaze meter.
+Interest in designing, analyzing and troubleshooting large-scale distributed systems.
+We need team members with an appetite for change and pushing the boundaries of what can be done with automation. Experience in working across development, operations, and product teams to prioritize needs and to build relationships is a must.
+Ability to work with little or no supervision.
+Corporate Security Responsibility
+All Activities Involving Access To Mastercard Assets, Information, And Networks Comes With An Inherent Risk To The Organization And, Therefore, It Is Expected That Every Person Working For, Or On Behalf Of, Mastercard Is Responsible For Information Security And Must:
+Abide by Mastercard’s security policies and practices;
+Ensure the confidentiality and integrity of the information being accessed;
+Report any suspected information security violation or breach, and
+Complete all periodic mandatory security trainings in accordance with Mastercard’s guidelines.

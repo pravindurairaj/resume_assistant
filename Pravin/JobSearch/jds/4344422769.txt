@@ -1,0 +1,46 @@
+LearnUpon is seeking an exceptional Staff Engineer, DevOps to join our Engineering team in Dublin. This is a flex role, working 1 day per week from LearnUpon's Dublin office.
+LearnUpon LMS helps organizations train their employees, customers, and members. Businesses can manage, track, and achieve their unique learning goals — all through a single, powerful solution.
+With offices in Dublin (our HQ), Belgrade, Philadelphia, Salt Lake City and Sydney, we are a global team with lots of diverse cultures, backgrounds, and experiences that puts our customers' experience at the heart of everything we do. Our culture fosters an open, collaborative and supportive environment where our accomplishments are celebrated and encouraged. We're always striving for the best solution (not the easy one). We’re proud of our success and we’re humble and hungry to achieve more.
+As a Staff Engineer, DevOps, you'll be a key technical leader and role model within LearnUpon. You'll shape the DevOps architecture of our best-in-class LMS, influence our technical strategy, and elevate the skills of our entire engineering organization. Your impact will extend beyond our product, contributing to our mission of building robust, lovable learning products that help customers achieve results.
+What will I be doing?
+Drive DevOps best practices around CI/CD, automation, scalability and reliability across LearnUpon's infrastructure and pipelines.
+Drive technical innovation and strategic initiatives across multiple teams and services.
+Provide technical guidance and mentorship to uplevel the entire engineering organization.
+Collaborate with Product Engineering teams and cross-functional partners to shape our long-term technical roadmap and strategy.
+Identify and solve complex technical challenges that significantly impact LearnUpon's growth and success.
+Champion engineering best practices, including code quality, system design, and operational excellence.
+Mentor and coach engineers across the organization, fostering a culture of continuous learning and growth.
+Resolve conflicts and drive alignment between teams, building a cohesive engineering culture.
+What skills do I need?
+8+ years of exceptional DevOps/SRE experience, with a proven track record of technical leadership in large-scale, distributed systems.
+Deep focus on containerized environments, with experience supporting local development, CI/CD workflows, and deployment across the cloud.
+Proven expertise in cloud infrastructure, especially AWS, with a deep understanding of scalability, reliability, and security in production environments.
+Strong experience working with Kubernetes and Helm charts, as a foundation for modern infrastructure and platform orchestration.
+Proficient in Infrastructure as Code (Terraform, Ansible), with a focus on building modular, reusable infrastructure patterns.
+Expertise in designing and maintaining CI/CD pipelines (GitLab preferred), and developing automation tooling (Bash, Python, Go).
+Demonstrated success in leading technical initiatives that span multiple teams and services.
+Outstanding communication skills, with the ability to influence and align stakeholders at all levels of the organization.
+Track record of mentoring and elevating the skills of other engineers, including senior-level talent.
+Don’t worry if you don’t tick every box in order to apply, we’re always happy to review applications and take all experience into consideration. We do our best to provide feedback where we can!
+Not Required But Considered a Big Plus
+Experience leading engineering initiatives across multiple locations.
+Contributions to open-source projects or thought leadership in the software engineering community.
+Experience with cost management for cloud infrastructure.
+Familiarity with GitOps workflows using tools like ArgoCD and FluxCD.
+Why work with us?
+Competitive salary and company ESOP
+25 days’ annual leave, plus 10 public holidays and 1 annual wellness day
+Private health insurance and company pension
+Parental benefits, including up to 26 weeks paid maternity leave, 4 weeks paid paternity leave, and coaching support for new parents (location-specific details apply)
+Up to 4 weeks per year working abroad (role eligibility applies)
+Clear career progression opportunities — take LearnUpon where you think it can go
+A collaborative and supportive environment with regular team events
+What is the Hiring Process?
+Our Typical Process Generally Works As Follows
+Qualified applicants will be invited to schedule a screening call.
+Successful candidates will then be invited to a series of practical interviews.
+Finally, candidates will have a short interview with a member of our C-Suite Team.
+The successful candidate will be contacted with an offer to join our team.
+LearnUpon is an Equal Opportunities Employer.
+We do not discriminate on the basis of gender, marital status, family status, age disability, sexual orientation, race, religion, membership of the Traveller community, or any other legally protected status.
+Visit our Careers site to find out more about working for LearnUpon, and check us out on Instagram.

@@ -1,0 +1,45 @@
+This Job is based in Australia
+The Opportunity
+The Research Associate will work on a Defence-funded project to develop LLM-agent-driven tools that reconstruct network topology, services, and administrator intent from partial information during crises, enabling rapid situational awareness across diverse, multi-vendor environments. This project is in collaboration with colleagues from the University of Sydney. Due to project requirements, only citizens of Australia, the Five Eyes Countries (New Zealand, Canada, the USA, and the UK), and NATO member countries will be considered. The role reports to Professor Salil Kanhere, Dr Rahat Masood and A/Prof. Gustavo Batista has no direct reports.
+Salary, Level A - $91,381 - $121,838 per annum + 17% superannuation
+Full Time
+Fixed-term contract to March 2027
+Location: Kensington – Sydney, Australia
+About UNSW
+UNSW isn’t like other places you’ve worked. Yes, we’re a large organisation with a diverse and talented community; a community doing extraordinary things. But what makes us different isn’t only what we do, it’s how we do it. Together, we are driven to be thoughtful, practical, and purposeful in all we do. If you want a career where you can thrive, be challenged and do meaningful work, you’re in the right place.
+The School of Computer Science and Engineering is one of the largest and most prestigious computing schools in Australia. It
+offers undergraduate programs in Software Engineering, Computer Engineering, Computer Science, Cyber Security and Bioinformatics, as well as a number of combined degrees with other disciplines. It attracts excellent students with outstanding records in international competitions. At the postgraduate level, there is a large PhD research program and coursework programs at the Master’s and Graduate Diploma levels in Computing and Information Technology, and at the Graduate Certificate level in Computing. Our research mission is to be at the forefront of research into new and exciting innovations with profound national and international impact. For further information about the School, please visit http://www.cse.unsw.edu.au/
+Skills & Experience
+PhD (or soon to be awarded) in computer science, electrical engineering or related area with demonstrated experience in computer networks and artificial intelligence.
+Experience in research on computer networking, network protocols, routing protocols, network management and network performance measurement.
+Hands-on experience with networking tools and simulators.
+Good understanding and experience with machine learning and Large Language Models (LLMs).
+Demonstrated ability to conduct independent research with limited supervision.
+Demonstrated track record of publications in top-rated journals and conferences in the discipline.
+Demonstrated ability to work in a team, collaborate across disciplines and build effective relationships.
+Strong interpersonal skills with demonstrated ability to communicate and interact with a diverse range of stakeholders, external clients and students.
+Ability to supervise undergraduate students or equivalent experience in the supervision of junior staff in related projects.
+Pre-Employment Checks
+Aligned with UNSW’s focus on cultivating a workplace defined by safety, ethical conduct, and strong integrity preferred candidates will be required to participate in a combination of pre-employment checks relevant to the role they have applied for. These pre-employment checks may include a combination of some of the following checks:
+National and International Criminal history checks
+Entitlement to work and ID checks
+Working With Children Checks
+Completion of a Gender-Based Violence Prevention Declaration
+Verification of relevant qualifications
+Verification of relevant professional membership
+Employment history and reference checks
+Financial responsibility assessments/checks
+Medical Checks and Assessments
+Compliance with the necessary combination of these checks is a condition of employment at UNSW.
+To be considered you will hold Australian Working Rights or Australian Citizenship. Visa sponsorship is not available for this appointment. Additional details about the specific responsibilities for these positions can be found in the position description. This is available via JOBS@UNSW.
+To Apply
+Please click the apply now button and submit your CV, Cover Letter and Responses to the Skills and Experience. You should systematically address the Skills and Experience listed within the position description in your application.
+Please note: Visa sponsorship is not available for this position.
+Please note applications will not be accepted if sent to the contact listed below.
+Contact
+:
+Allyssar Hamoud – Talent Acquisition Associate
+E: a.hamoud@unsw.edu.au
+Applications close:
+11:55 pm (Sydney time) on Sunday 10th May 2026
+UNSW is committed to evolving a culture that embraces equity and supports a diverse and inclusive community where everyone can participate fairly, in a safe and respectful environment. We welcome candidates from all backgrounds and encourage applications from people of diverse gender, sexual orientation, cultural and linguistic backgrounds, Aboriginal and Torres Strait Islander background, people with disability and those with caring and family responsibilities. UNSW provides workplace adjustments for people with disability, and access to flexible work options for eligible staff. The University reserves the right not to proceed with any appointment.

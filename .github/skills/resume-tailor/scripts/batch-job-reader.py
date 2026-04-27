@@ -38,7 +38,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-# ── Dependency check ──────────────────────────────────────────────────────────
+# -- Dependency check ----------------------------------------------------------
 
 def check_dependencies():
     missing = []
@@ -52,7 +52,7 @@ def check_dependencies():
         sys.exit(1)
 
 
-# ── Repo root ────────────────────────────────────────────────────────────────
+# -- Repo root ----------------------------------------------------------------
 
 def find_repo_root():
     """Walk up from script location to find the repo root (contains .github/)."""
@@ -64,7 +64,7 @@ def find_repo_root():
     return None
 
 
-# ── Career profile ────────────────────────────────────────────────────────────
+# -- Career profile ------------------------------------------------------------
 
 def load_career_profile(user_name, repo_root):
     """
@@ -110,13 +110,13 @@ def load_career_profile(user_name, repo_root):
     return {}
 
 
-# ── Name sanitization ─────────────────────────────────────────────────────────
+# -- Name sanitization ---------------------------------------------------------
 
 def sanitize_company(name):
     """
     Normalize a company name to a folder-safe alphanumeric string.
     Strips common corporate suffixes (Ltd, Inc, Corp, etc.).
-    'Acme Corp Ltd.' → 'Acme'   |   'A&B Solutions' → 'ABSolutions'
+    'Acme Corp Ltd.' -> 'Acme'   |   'A&B Solutions' -> 'ABSolutions'
     """
     name = re.sub(
         r'\b(Ltd|Limited|Inc|Incorporated|Corp|Corporation|GmbH|PLC|LLC|Co)\b\.?',
@@ -129,7 +129,7 @@ def sanitize_company(name):
 def shorten_title(title):
     """
     Shorten a job title to a compact CamelCase string for use in folder/file names.
-    'Senior Data Analyst' → 'DataAnalyst'   |   'Lead Platform Engineer' → 'PlatformEngineer'
+    'Senior Data Analyst' -> 'DataAnalyst'   |   'Lead Platform Engineer' -> 'PlatformEngineer'
     """
     title = re.sub(
         r'\b(Senior|Sr\.?|Junior|Jr\.?|Lead|Staff|Principal|Associate|Snr\.?|Head of)\b',
@@ -139,7 +139,7 @@ def shorten_title(title):
     return ''.join(w.capitalize() for w in words) or "Role"
 
 
-# ── Excel parsing ─────────────────────────────────────────────────────────────
+# -- Excel parsing -------------------------------------------------------------
 
 def find_latest_excel(jobsearch_dir):
     """Return the most recently modified .xlsx in jobsearch_dir, or None."""
@@ -157,10 +157,10 @@ def read_excel_jobs(xlsx_path, min_fit):
       Row 1  : Title metadata
       Row 2  : Timestamp metadata
       Row 3  : Spacer
-      Row 4  : Column headers  →  #, Company, Job Title, Location, Job Link, [Fit %], [Best Matching Role]
+      Row 4  : Column headers  ->  #, Company, Job Title, Location, Job Link, [Fit %], [Best Matching Role]
       Row 5+ : Data rows
 
-    Job Link (column E) is stored as a hyperlink — the displayed value is "Open Job ↗"
+    Job Link (column E) is stored as a hyperlink — the displayed value is "Open Job >"
     and the actual URL is in cell.hyperlink.target.
 
     Fit % column (F) is optional — only present when scraper had target_roles configured.
@@ -189,7 +189,7 @@ def read_excel_jobs(xlsx_path, min_fit):
     jobs = []
 
     for row in ws.iter_rows(min_row=DATA_START, values_only=False):
-        # Column B → Company (index 1)
+        # Column B -> Company (index 1)
         company_cell = row[1] if len(row) > 1 else None
         if not company_cell or not company_cell.value:
             continue
@@ -198,19 +198,19 @@ def read_excel_jobs(xlsx_path, min_fit):
         title    = str(row[2].value or "").strip() if len(row) > 2 else ""
         location = str(row[3].value or "").strip() if len(row) > 3 else ""
 
-        # Column E → Job Link (index 4): read hyperlink target, not display value
+        # Column E -> Job Link (index 4): read hyperlink target, not display value
         link = ""
         if len(row) > 4:
             link_cell = row[4]
             if link_cell.hyperlink is not None:
-                # hyperlink.target is the real URL; display value is "Open Job ↗"
+                # hyperlink.target is the real URL; display value is "Open Job >"
                 raw = str(getattr(link_cell.hyperlink, "target", "") or "")
                 link = raw.split("?")[0].strip()
             elif link_cell.value and str(link_cell.value).startswith("http"):
                 # Fallback: plain text URL stored in cell value
                 link = str(link_cell.value).split("?")[0].strip()
 
-        # Column F → Fit % (index 5, optional)
+        # Column F -> Fit % (index 5, optional)
         fit_pct = 0
         if has_fit_col and len(row) > 5 and row[5].value is not None:
             try:
@@ -218,7 +218,7 @@ def read_excel_jobs(xlsx_path, min_fit):
             except ValueError:
                 fit_pct = 0
 
-        # Column G → Best Matching Role (index 6, optional)
+        # Column G -> Best Matching Role (index 6, optional)
         matching_role = ""
         if len(row) > 6 and row[6].value:
             matching_role = str(row[6].value).strip()
@@ -243,17 +243,17 @@ def read_excel_jobs(xlsx_path, min_fit):
     return jobs
 
 
-# ── Output path resolution ────────────────────────────────────────────────────
+# -- Output path resolution ----------------------------------------------------
 
 def resolve_output_names(jobs, user, repo_root):
     """
     Compute folder_name, output_folder, output_md, output_docx, context_file for each job.
 
     Rules:
-    - Single job for company   → folder = {CompanySanitized}
-    - Multiple jobs per company → folder = {CompanySanitized}_{TitleShort}
-    - Duplicate company+title  → folder = {CompanySanitized}_{TitleShort}_{N}
-    - Sanitized-name collision (different companies → same string) → {CompanySanitized}_{hash_suffix}
+    - Single job for company   -> folder = {CompanySanitized}
+    - Multiple jobs per company -> folder = {CompanySanitized}_{TitleShort}
+    - Duplicate company+title  -> folder = {CompanySanitized}_{TitleShort}_{N}
+    - Sanitized-name collision (different companies -> same string) -> {CompanySanitized}_{hash_suffix}
     """
     # Build sanitized forms
     sanitized_list = [sanitize_company(j["company"]) for j in jobs]
@@ -276,11 +276,11 @@ def resolve_output_names(jobs, user, repo_root):
         key = (cs, ts)
 
         if count_by_key[key] > 1:
-            # Multiple identical company+title combos → add numeric suffix
+            # Multiple identical company+title combos -> add numeric suffix
             key_seen[key] = key_seen.get(key, 0) + 1
             folder_name = f"{cs}_{ts}_{key_seen[key]}"
         elif count_by_company[cs] > 1:
-            # Same company, different roles → include title
+            # Same company, different roles -> include title
             folder_name = f"{cs}_{ts}"
         else:
             folder_name = cs
@@ -304,7 +304,7 @@ def resolve_output_names(jobs, user, repo_root):
     return results
 
 
-# ── Skip checks ───────────────────────────────────────────────────────────────
+# -- Skip checks ---------------------------------------------------------------
 
 def check_existing_resumes(jobs, user):
     """
@@ -344,7 +344,7 @@ def load_manifest_completed(manifest_path):
         return set()
 
 
-# ── JD pre-loading ────────────────────────────────────────────────────────────
+# -- JD pre-loading ------------------------------------------------------------
 
 def load_jd_files(jobs, user):
     """
@@ -392,7 +392,7 @@ def load_jd_files(jobs, user):
     return jobs
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# -- Main ----------------------------------------------------------------------
 
 def main():
     parser = argparse.ArgumentParser(
@@ -428,24 +428,24 @@ def main():
         print(f"ERROR: {jobsearch_dir} does not exist. Run the job scraper first.")
         sys.exit(1)
 
-    # ── Career profile ─────────────────────────────────────────────────────────
+    # -- Career profile ---------------------------------------------------------
     profile        = load_career_profile(user, repo_root)
     user_full_name = profile.get("full_name") or user
 
-    # ── Find / validate Excel ──────────────────────────────────────────────────
+    # -- Find / validate Excel --------------------------------------------------
     xlsx_path = Path(args.excel) if args.excel else find_latest_excel(jobsearch_dir)
     if not xlsx_path or not xlsx_path.exists():
         print(f"ERROR: No .xlsx file found in {jobsearch_dir}. Run the job scraper first.")
         sys.exit(1)
 
-    print(f"\n{'─' * 60}")
+    print(f"\n{'-' * 60}")
     print(f"  batch-job-reader.py")
-    print(f"{'─' * 60}")
+    print(f"{'-' * 60}")
     print(f"  User         : {user} ({user_full_name})")
     print(f"  Source Excel : {xlsx_path.name}")
     print(f"  Min Fit %%    : {args.min_fit}%%")
 
-    # ── Parse Excel ────────────────────────────────────────────────────────────
+    # -- Parse Excel ------------------------------------------------------------
     try:
         all_jobs = read_excel_jobs(xlsx_path, args.min_fit)
     except Exception as e:
@@ -453,16 +453,16 @@ def main():
         sys.exit(1)
 
     total_after_filter = len(all_jobs)
-    print(f"  After filter : {total_after_filter} job(s) with Fit ≥ {args.min_fit}%%")
+    print(f"  After filter : {total_after_filter} job(s) with Fit >= {args.min_fit}%%")
 
     if not all_jobs:
         print("\n  No jobs meet the fit threshold. Try a lower --min-fit value.")
         sys.exit(0)
 
-    # ── Resolve output paths ───────────────────────────────────────────────────
+    # -- Resolve output paths ---------------------------------------------------
     all_jobs = resolve_output_names(all_jobs, user, repo_root)
 
-    # ── Skip: resume from previous manifest ───────────────────────────────────
+    # -- Skip: resume from previous manifest -----------------------------------
     completed_folders = set()
     skipped_prev_run  = []
     if args.manifest:
@@ -470,7 +470,7 @@ def main():
         if completed_folders:
             print(f"  Resuming     : {len(completed_folders)} job(s) already completed in previous run")
 
-    # ── Skip: existing .docx in Resumes/ ──────────────────────────────────────
+    # -- Skip: existing .docx in Resumes/ --------------------------------------
     to_process, skipped_existing = check_existing_resumes(all_jobs, user)
 
     if completed_folders:
@@ -485,14 +485,14 @@ def main():
                 remaining.append(job)
         to_process = remaining
 
-    # ── Cap --max-jobs ─────────────────────────────────────────────────────────
+    # -- Cap --max-jobs ---------------------------------------------------------
     if args.max_jobs and len(to_process) > args.max_jobs:
         print(f"  Capping to {args.max_jobs} job(s) (--max-jobs)")
         to_process = to_process[:args.max_jobs]
 
-    # ── Load pre-saved JD files ────────────────────────────────────────────────
+    # -- Load pre-saved JD files ------------------------------------------------
     to_process = load_jd_files(to_process, user)
-    # ── Scrape JDs from LinkedIn guest API for remaining jobs ──────────────────
+    # -- Scrape JDs from LinkedIn guest API for remaining jobs ------------------
     scraper_path = repo_root / ".github" / "skills" / "job-scraper" / "scripts" / "scrape-linkedin-jobs.py"
     scraper_module = None
     if scraper_path.exists():
@@ -528,7 +528,7 @@ def main():
     jd_loaded  = sum(1 for j in to_process if j["jd_source"] != "pending_user_input")
     jd_pending = len(to_process) - jd_loaded
 
-    # ── Build manifest ─────────────────────────────────────────────────────────
+    # -- Build manifest ---------------------------------------------------------
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     manifest_jobs = []
@@ -576,7 +576,7 @@ def main():
         "skipped": all_skipped,
     }
 
-    # ── Write manifest ─────────────────────────────────────────────────────────
+    # -- Write manifest ---------------------------------------------------------
     if args.output:
         manifest_path = Path(args.output)
     else:
@@ -588,19 +588,19 @@ def main():
         encoding="utf-8",
     )
 
-    # ── Print summary ──────────────────────────────────────────────────────────
-    print(f"\n{'─' * 60}")
+    # -- Print summary ----------------------------------------------------------
+    print(f"\n{'-' * 60}")
     print(f"  SUMMARY")
-    print(f"{'─' * 60}")
-    print(f"  Jobs in Excel (Fit ≥{args.min_fit}%%) : {total_after_filter}")
+    print(f"{'-' * 60}")
+    print(f"  Jobs in Excel (Fit >={args.min_fit}%%) : {total_after_filter}")
     print(f"  Skipped (resume exists)     : {len(skipped_existing)}")
     print(f"  Skipped (prev run complete) : {len(skipped_prev_run)}")
     print(f"  To process                  : {len(to_process)}")
     print(f"  JD pre-loaded from file     : {jd_loaded}")
     print(f"  JD pending (user paste)     : {jd_pending}")
-    print(f"{'─' * 60}")
+    print(f"{'-' * 60}")
     print(f"  Manifest: {manifest_path}")
-    print(f"{'─' * 60}")
+    print(f"{'-' * 60}")
 
     if jd_pending > 0:
         jds_dir = Path(user) / "JobSearch" / "jds"
@@ -613,9 +613,9 @@ def main():
     if manifest_jobs:
         print(f"\n  Jobs to process:")
         print(f"  {'#':>3}  {'Company':<28}  {'Title':<32}  {'Fit':>4}  JD")
-        print(f"  {'─'*3}  {'─'*28}  {'─'*32}  {'─'*4}  {'─'*12}")
+        print(f"  {'-'*3}  {'-'*28}  {'-'*32}  {'-'*4}  {'-'*12}")
         for j in manifest_jobs:
-            jd_flag = "✓ ready" if j["jd_source"] != "pending_user_input" else "⏳ needed"
+            jd_flag = "OK ready" if j["jd_source"] != "pending_user_input" else "⏳ needed"
             company_col = j["company"][:28]
             title_col   = j["title"][:32]
             print(f"  {j['index']:>3}  {company_col:<28}  {title_col:<32}  {j['fit_pct']:>3}%  {jd_flag}")

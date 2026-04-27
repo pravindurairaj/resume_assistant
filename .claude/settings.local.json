@@ -14,7 +14,11 @@
       "Bash(cp .github/skills/resume-tailor/scripts/batch-pipeline.py .claude/skills/resume-tailor/scripts/batch-pipeline.py)",
       "Bash(cp .github/skills/resume-tailor/scripts/tailor-resume.py .claude/skills/resume-tailor/scripts/tailor-resume.py)",
       "Bash(rm .claude/CLAUDE.md)",
-      "Bash(cp .github/skills/resume-tailor/scripts/extract-resume.py .claude/skills/resume-tailor/scripts/extract-resume.py)"
+      "Bash(cp .github/skills/resume-tailor/scripts/extract-resume.py .claude/skills/resume-tailor/scripts/extract-resume.py)",
+      "Bash(resume_assistant/Scripts/python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py --user Pravin)",
+      "Bash(python -c ' *)",
+      "Bash(resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/batch-job-reader.py --user Pravin --min-fit 50)",
+      "Bash(resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/batch-pipeline.py --manifest Pravin/JobSearch/batch_manifest_selected.json --min-fit 50 --llm-polish-above 75)"
     ]
   }
 }

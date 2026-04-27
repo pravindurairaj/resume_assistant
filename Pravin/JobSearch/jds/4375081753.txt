@@ -1,0 +1,38 @@
+Description
+Join the Amazon Optics team and be at the forefront of building innovative services that secure the foundation of our business from security threats. Our team develops and manages critical services used by all Corporate and AWS data center employees to protect physical sites and preserve the trust that AWS users have placed in us. You'll work with passionate software engineers to build systems that are essential for keeping Corporate and AWS sites secure worldwide.
+In this role, you'll design, develop, and optimize solutions where "can't be done" isn't considered an answer. You'll tackle complex architecture challenges with extensible, scalable solutions while always seeking ways to simplify. As a significant contributor throughout the software development lifecycle, you'll build services that are deployed to every AWS region using AWS services in a fully Infrastructure as Code (IaC) environment, where you'll own everything end-to-end.
+This position requires that the candidate selected be an EU Citizen.
+Key job responsibilities
+Design and implement secure services that protect AWS physical locations, making meaningful contributions to the full software development lifecycle from scoping and design through testing, deployment, and maintenance.
+Take ownership of operational excellence, identifying root causes of issues and implementing permanent fixes while continually improving team operations.
+Work with stakeholders to understand business and customer value, ensuring you deliver solutions that balance customer requirements with team objectives.
+Actively participate in code reviews, providing meaningful feedback to teammates while contributing to documentation that explains how systems are constructed, tested, and operated.
+Automate operational inefficiencies for both the team and customers, building solutions that scale across all AWS regions while maintaining high quality standards.
+A day in the life
+Your day begins with a quick team standup to align priorities before diving into coding complex security features for the Optics platform. You'll collaborate with teammates to solve challenging architecture problems, review pull requests, and participate in design discussions for upcoming features. Throughout the day, you'll work in an IaC deployment environment where you'll design, develop, test, and deploy solutions. You'll have opportunities to automate operational inefficiencies and stretch yourself technically while helping secure AWS sites globally.
+About The Team
+The Amazon Optics team values strong intuition backed by metrics and data. We provide solutions where "can't be done" isn't considered an answer, taking on seemingly impossible challenges and finding creative solutions. Our services are used around the world to secure assets for every single AWS customer, making our work essential to maintaining trust in the AWS platform. We foster a collaborative environment where you'll share knowledge, help others achieve, and be empowered to grow while taking ownership of critical security services that protect AWS infrastructure.
+Diverse Experiences
+Amazon Security values diverse experiences. Even if you do not meet all of the qualifications and skills listed in the job description, we encourage candidates to apply. If your career is just starting, hasn’t followed a traditional path, or includes alternative experiences, don’t let it stop you from applying.
+Why Amazon Security?
+At Amazon, security is central to maintaining customer trust and delivering delightful customer experiences. Our organization is responsible for creating and maintaining a high bar for security across all of Amazon’s products and services. We offer talented security professionals the chance to accelerate their careers with opportunities to build experience in a wide variety of areas including cloud, devices, retail, entertainment, healthcare, operations, and physical stores.
+Inclusive Team Culture
+In Amazon Security, it’s in our nature to learn and be curious. Ongoing DEI events and learning experiences inspire us to continue learning and to embrace our uniqueness. Addressing the toughest security challenges requires that we seek out and celebrate a diversity of ideas, perspectives, and voices.
+Training & Career Growth
+We’re continuously raising our performance bar as we strive to become Earth’s Best Employer. That’s why you’ll find endless knowledge-sharing, training, and other career-advancing resources here to help you develop into a better-rounded professional.
+Work/Life Balance
+We value work-life harmony. Achieving success at work should never come at the expense of sacrifices at home, which is why flexible work hours and arrangements are part of our culture. When we feel supported in the workplace and at home, there’s nothing we can’t achieve.
+Basic Qualifications
+Experience (non-internship) in professional software development
+Experience designing or architecting (design patterns, reliability and scaling) of new and existing systems
+Experience programming with at least one software programming language
+This role requires you to be a national of an EU member state.
+Preferred Qualifications
+Bachelor's degree in computer science or equivalent
+Experience with full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations
+Amazon is an equal opportunities employer. We believe passionately that employing a diverse workforce is central to our success. We make recruiting decisions based on your experience and skills. We value your passion to discover, invent, simplify and build. Protecting your privacy and the security of your data is a longstanding top priority for Amazon. Please consult our Privacy Notice (https://www.amazon.jobs/en/privacy_page) to know more about how we collect, use and transfer the personal data of our candidates.
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.
+Company
+- Amazon Web Services EMEA SARL (Irish Branch)
+Job ID: A3184252

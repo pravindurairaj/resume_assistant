@@ -1,0 +1,70 @@
+Software Engineering Lead
+Brightwater is delighted to be engaged by Oak Global as their exclusive recruitment partner for their exciting technology and innovation greenfield team build out here in Dublin.
+About the Company
+OAK Global is a leading risk partner, embracing the global reach afforded through operating in the Lloyd’s market. Underwriting through Lloyd’s Syndicates 2843 and 1440.
+Headquartered in London, OAK Global operates across key global markets, addressing complex risks with expertise across diverse industries. The company prides itself on fostering trusted partnerships, leveraging advanced analytics and underwriting expertise, and maintaining financial stability.
+OAK Global is shaping the future of (re)insurance with innovation, reliability, and a forward-looking vision.
+About the Position
+OAK Global offers a rare opportunity to work within a true greenfield environment. Free from legacy systems, complex migrations, or transformation constraints, we are building a modern, best-in-class technology architecture designed to deliver exceptional business value from day one.
+Reporting to the Head of Risk Analytics and Data Science, this role offers the opportunity to lead the build and implementation of a growing portfolio of strategic applications and core software across OCEAN (OAK’s Capital Exposure and Analytics Network). You will work within a small multidisciplinary team of data engineers, actuaries and data scientists across Capital & Risk, translating advanced analytics and complex concepts into robust, scalable software.
+This is a senior contributor role with technical leadership responsibility. As an early software engineer working on OCEAN, you will play a key role in shaping the architecture, implementation patterns and engineering standards across it.
+What You’ll Build:
+Full-stack applications across OAK’s Capital Exposure and Analytics Network, spanning React/TypeScript products, Python services, and internal analytical tooling
+User-facing interfaces and analytical applications for proprietary pricing, exposure, reconciliation, and portfolio workflows
+Backend services, APIs, and workflow components integrating internal tools, analytical models, data stores, and selected external platforms
+Production-grade internal tools and model-driven applications with improved reliability, usability, maintainability, and operational readiness
+Key Responsibilities
+Application & Platform Development
+Play a central role in the design and development of software applications and platform capabilities across OCEAN
+Lead end-to-end delivery of full-stack applications, from frontend user experience through to backend services, APIs and cloud deployment
+Build both React/TypeScript applications and Python-based internal analytical applications, including Streamlit tools used by Capital & Risk, Underwriting and Finance & Operations teams
+Develop Python services, serverless APIs and workflow components across Lambda, Step Functions, S3 and DynamoDB, and productionise pricing and analytics tools into maintainable software
+Design and implement REST APIs and service interfaces enabling interoperability across internal tools, models and external platforms
+Refactor pricing models and other applications into production-grade software within OCEAN
+Design application architectures that enable long-term integration with AI
+Engineering Quality & Production Readiness
+Translate complex requirements into high-quality software
+Harden proprietary tooling and internal applications to improve reliability, resilience, security and operational readiness
+Work closely with the Head of Engineering to establish and uphold best-practice engineering and technical standards including testing, CI/CD, observability, code quality and infrastructure-as-code
+Technical Leadership
+Provide technical leadership through architecture decisions, engineering judgement, implementation quality and hands-on delivery
+Foundational platform capabilities that support future AI-augmented workflows and intelligent tooling across OCEAN
+Experience/Requirements
+Lead software engineering experience (Lead/Staff Software Engineer or similar)
+Experience delivering full-stack production-grade applications in AWS spanning frontend, backend and cloud infrastructure
+Experience designing application architectures and integrating multiple internal and external systems through APIs and services
+BSc/MSc in Computer Science, Engineering, Mathematics, Physics or a related discipline, or equivalent practical experience.
+Technical Skills:
+Programming
+Python and TypeScript
+Familiarity with libraries such as: Polars, DuckDB, Plotly, Pydantic, boto3 / PynamoDB
+OpenAPI-generated clients
+Frontend
+React
+Streamlit
+Backend and APIs
+Python service development
+REST API design and implementation
+Serverless and event-driven application patterns
+Cloud and Infrastructure
+Familiarity with AWS services including: Lambda, Step Functions, EventBridge, S3 DynamoDB, ECS/Fargate and Application Load Balancer (ALB)
+CI/CD pipelines
+Terraform/Terraform Code
+Software Engineering
+Git / GitHub
+Familiarity with automated testing using: pytest / unittest, Vitest, Playwright, snapshot / regression testing, and CI-driven workflow/infrastructure validation
+Observability, reliability, maintainability, and secure scalable engineering practices
+Strong practical use of AI coding tools such as Codex and Claude Code, with sound judgement around quality, review and production readiness
+Why join Oak Global?
+Join a culture that values Creativity, Excellence, Determination, Authenticity, and Respect.
+You’ll work closely with industry-leading talent, shape OAK Global’s technology direction, and directly enable the company’s strategic growth.
+Remuneration Package
+Highly competitive remuneration package and benefits
+Location
+Dublin 2 Location – TBC ASAP
+Contact
+Brightwater has been exclusively engaged to lead this search. For a confidential discussion regarding this Business Analyst position, please apply in confidence and contact
+Derek Smyth
+at
+d.smyth@brightwater.ie
+DDI: 353 1 592 7861
