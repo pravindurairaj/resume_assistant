@@ -393,6 +393,10 @@ def build_docx(md_path: str, output_dir: str = None, author_name: str = None):
     print(f"Saved: {out_path}")
     if resolved_author:
         print(f"Author: {resolved_author}")
+    # Estimate page count (~50 paragraphs per page)
+    paragraph_count = len(doc.paragraphs)
+    estimated_pages = max(1, round(paragraph_count / 50))
+    print(f"Estimated pages: ~{estimated_pages}  (paragraphs: {paragraph_count})")
     return str(out_path)
 
 
@@ -401,6 +405,7 @@ def build_docx_from_string(md_content: str, output_path: str, author_name: str =
 
     Used by tailor-resume.py to generate .docx directly from in-memory content.
     """
+    from docx import Document
     import tempfile
     with tempfile.NamedTemporaryFile(mode='w', suffix='.md', delete=False, encoding='utf-8') as tmp:
         tmp.write(md_content)
@@ -415,6 +420,11 @@ def build_docx_from_string(md_content: str, output_path: str, author_name: str =
             if final_out.exists():
                 final_out.unlink()
             temp_docx.rename(final_out)
+        # Load final .docx and print page estimate
+        final_doc = Document(str(final_out))
+        paragraph_count = len(final_doc.paragraphs)
+        estimated_pages = max(1, round(paragraph_count / 50))
+        print(f"Estimated pages: ~{estimated_pages}  (paragraphs: {paragraph_count})")
     finally:
         Path(tmp_path).unlink(missing_ok=True)
     print(f"Saved: {output_path}")

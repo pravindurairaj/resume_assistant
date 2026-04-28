@@ -72,6 +72,9 @@ graphify-out/
 # settings.local.json is machine-specific; never commit
 .claude/settings.local.json
 
+# ── Pipeline config (machine-specific defaults) ──────────────
+.resume-assistant.toml
+
 # ── IDE / OS ─────────────────────────────────────────────────
 .vscode/settings.json
 .DS_Store

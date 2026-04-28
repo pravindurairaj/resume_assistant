@@ -24,7 +24,7 @@ Find latest manifest and run pipeline:
 ```powershell
 # Run from the project root (wherever this repo is cloned)
 $manifest = Get-ChildItem "{User}\JobSearch\batch_manifest_*.json" | Sort-Object LastWriteTime -Descending | Select-Object -First 1 -ExpandProperty FullName
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\batch-pipeline.py --manifest $manifest --min-fit 50 --llm-polish-above 75
+resume_assistant\Scripts\python.exe .github\skills\resume-tailor\scripts\batch-pipeline.py --manifest $manifest --min-fit 50 --llm-polish-above 75
 ```
 
 If no manifest exists, run `batch-job-reader.py` first to generate one.
@@ -34,7 +34,7 @@ If no manifest exists, run `batch-job-reader.py` first to generate one.
 Ask user to paste the job description, then run:
 
 ```powershell
-.\.venv\Scripts\python.exe .github\skills\resume-tailor\scripts\tailor-resume.py `
+resume_assistant\Scripts\python.exe .github\skills\resume-tailor\scripts\tailor-resume.py `
   --manifest-entry _single_job.json `
   --master .github\Users\{User}\{User}_Resume.md `
   --author "{UserFullName}"

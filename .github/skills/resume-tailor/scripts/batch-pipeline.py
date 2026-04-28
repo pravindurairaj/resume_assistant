@@ -104,7 +104,8 @@ def print_summary_table(results: list):
 
 def main():
     parser = argparse.ArgumentParser(description='Autonomous batch resume pipeline')
-    parser.add_argument('--manifest', required=True, help='Path to manifest JSON')
+    parser.add_argument('--manifest', help='Path to manifest JSON (default: newest in {User}/JobSearch/)')
+    parser.add_argument('--user', help='User name (only required when --manifest is omitted)')
     parser.add_argument('--min-fit', type=int, default=0,
                         help='Skip jobs below this fit %% (default: process all)')
     parser.add_argument('--max-bullets', type=int, default=10,
@@ -118,6 +119,19 @@ def main():
     parser.add_argument('--dry-run', action='store_true',
                         help='Print plan without generating any files')
     args = parser.parse_args()
+
+    if not args.manifest:
+        if not args.user:
+            print("ERROR: provide --manifest <path> or --user <name> (to auto-discover newest manifest)")
+            sys.exit(2)
+        search_dir = Path(args.user) / 'JobSearch'
+        candidates = sorted(search_dir.glob('batch_manifest_*.json'),
+                            key=lambda p: p.stat().st_mtime, reverse=True)
+        if not candidates:
+            print(f"ERROR: no batch_manifest_*.json found in {search_dir}/")
+            sys.exit(1)
+        args.manifest = str(candidates[0])
+        print(f"Auto-selected manifest: {args.manifest}")
 
     manifest = load_manifest(args.manifest)
     jobs = manifest.get('jobs', [])

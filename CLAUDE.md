@@ -60,11 +60,22 @@ resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/extract-res
 resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/md-to-docx.py \
   ".github/Users/{Name}/{Name}_Resume_{Co}.md" "{Name}/Resumes/{Co}" "{Full Name}"
 
-# Build batch manifest from latest Excel, then run autonomous pipeline
+# One-command end-to-end pipeline (scrape → manifest → batch-tailor)
+# Reads default user, min-fit, and llm-polish-above from .resume-assistant.toml
+resume_assistant/Scripts/python run-pipeline.py
+resume_assistant/Scripts/python run-pipeline.py --skip-scrape --min-fit 75
+resume_assistant/Scripts/python run-pipeline.py --user Navya --min-fit 60
+
+# Or run the steps individually:
 resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/batch-job-reader.py \
   --user Pravin --min-fit 50
+# --manifest is now optional — auto-discovers newest manifest for --user
 resume_assistant/Scripts/python .github/skills/resume-tailor/scripts/batch-pipeline.py \
-  --manifest Pravin/JobSearch/batch_manifest_{ts}.json --min-fit 50 --llm-polish-above 75
+  --user Pravin --min-fit 50 --llm-polish-above 75
+
+# Sync shared content between .github/ and .claude/ (auto-runs via PostToolUse hook)
+resume_assistant/Scripts/python scripts/sync-mirrors.py --check   # report drift
+resume_assistant/Scripts/python scripts/sync-mirrors.py            # fix drift
 ```
 
 ### Skill invocation (Claude Code chat)
@@ -131,17 +142,21 @@ fn = module.function_name
 
 ---
 
-## File Sync Rule — CRITICAL
+## File Sync Rule
 
-`.github/` and `.claude/` must stay **identical**. Every skill, script, prompt, agent, instruction, and context file must exist in both locations with the same content. After changing any file in one, immediately copy to the mirror:
+Each tree is **adapted to its coding agent**:
 
-```bash
-cp .github/skills/resume-tailor/SKILL.md .claude/skills/resume-tailor/SKILL.md
-cp .github/context/resume_tailor.md .claude/context/resume_tailor.md
-# etc.
-```
+| Tree | Agent | Agent-native (do NOT mirror) |
+|------|-------|------------------------------|
+| `.github/` | GitHub Copilot | `copilot-instructions.md`, `prompts/`, `agents/` |
+| `.claude/` | Claude Code | `commands/`, `agents/`, `settings.json`, `settings.local.json` |
 
-After any session that modifies `.github/context/` files, also update `.claude/context/`.
+**Shared content** (mirrored byte-identical between trees): `skills/` (scripts, SKILL.md, assets, references), `context/`, `instructions/`, `Users/`, `requirements.txt`.
+
+Sync is automated:
+- A `PostToolUse` hook in `.claude/settings.json` runs `scripts/sync-mirrors.py --quiet` after any `Edit`/`Write`/`MultiEdit`.
+- Manual: `python scripts/sync-mirrors.py --check` reports drift; `python scripts/sync-mirrors.py` fixes it (newer mtime wins).
+- Agent-native files are excluded from the sync — keep them in their owning tree.
 
 ---
 

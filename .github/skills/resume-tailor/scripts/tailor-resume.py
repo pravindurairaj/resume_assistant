@@ -252,6 +252,73 @@ def select_projects(projects: list, jd_keywords: Counter, max_projects: int = 2)
     return [p for p, _ in relevant[:max_projects]]
 
 
+# ── Page budget enforcement ───────────────────────────────────────────────
+
+def estimate_lines(md_content: str) -> int:
+    """Estimate effective lines in markdown accounting for wrapping at 80 chars.
+
+    Returns approximate line count for a 2-column page layout (80-char width).
+    Wrapping factor ~1.3x for Calibri Light 11pt with margins.
+    """
+    non_empty_lines = [l for l in md_content.split('\n') if l.strip()]
+    # Long lines wrap; apply conservative wrapping factor
+    total_chars = sum(len(l) for l in non_empty_lines)
+    effective_lines = len(non_empty_lines) + (total_chars // 80)
+    return int(effective_lines * 1.3)  # Account for line height
+
+
+def trim_to_budget(
+    md_content: str,
+    resume: dict,
+    jd_keywords: Counter,
+    max_bullets: int = 10,
+    max_older_bullets: int = 4,
+    max_projects: int = 2,
+) -> str:
+    """Iteratively trim resume content to fit ~2-page budget (~100 effective lines).
+
+    Trim priority: 1. Projects  2. Older role bullets  3. Current role bullets
+    """
+    budget_lines = 100
+    current_lines = estimate_lines(md_content)
+
+    if current_lines <= budget_lines:
+        return md_content
+
+    # Start trimming: projects first
+    working_max_projects = max_projects
+    working_max_older = max_older_bullets
+    working_max_bullets = max_bullets
+
+    attempts = 0
+    max_attempts = 15  # Prevent infinite loops
+
+    while current_lines > budget_lines and attempts < max_attempts:
+        if working_max_projects > 0:
+            working_max_projects -= 1
+        elif working_max_older > 1:
+            working_max_older -= 1
+        elif working_max_bullets > 6:  # Floor at 6 bullets for current role
+            working_max_bullets -= 1
+        else:
+            break  # Stop trimming to avoid gutting the resume
+
+        md_content = build_tailored_md(
+            resume, jd_keywords, '',
+            max_murex_bullets=working_max_bullets,
+            max_older_bullets=working_max_older,
+            max_projects=working_max_projects,
+        )
+        current_lines = estimate_lines(md_content)
+        attempts += 1
+
+    if current_lines > budget_lines:
+        print(f"⚠ Resume estimate: ~{estimate_lines(md_content) // 50 + 1} pages (target: 2). "
+              f"Consider reviewing and manually trimming sections.")
+
+    return md_content
+
+
 def clean_summary(summary: str) -> str:
     """Strip banned words from summary text."""
     words = summary.split()
@@ -472,6 +539,12 @@ def tailor_job(
         max_murex_bullets=max_bullets,
         max_older_bullets=max_older_bullets,
         max_projects=max_projects,
+    )
+
+    # Apply page budget trim (enforce ~2-page limit)
+    tailored_md = trim_to_budget(
+        tailored_md, resume, jd_keywords,
+        max_bullets, max_older_bullets, max_projects,
     )
 
     # Generate match report

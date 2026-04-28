@@ -139,3 +139,14 @@ The resume-tailor skill creates ATS-friendly, JD-tailored resumes from stored ma
 | `resume_cache` threaded through batch | `batch-pipeline.py` now loads `tailor-resume.py` module once via `load_tailor_module()` and calls `parse_master_resume()` once before the loop; `run_tailor()` receives `tailor_mod` + `resume_cache` as params. Eliminates N redundant file reads per batch. |
 | `batch-job-reader` saves scraped JDs | After scraping a JD from LinkedIn, saves to `jds/{folder_name}.txt` so subsequent runs use the cached file. |
 | CLAUDE.md updated | Added `--skip-jd-scrape` example to Key Commands section. Merged `CLAUDE._1md` behavioral guidelines as appendix. |
+
+### 2026-04-28 — v5 (workflow simplification)
+
+| Change | Detail |
+|--------|--------|
+| `run-pipeline.py` added | Top-level wrapper chains scrape → batch-job-reader → batch-pipeline in one command. Resolves `--user` from CLI / `RESUME_USER` env / `.resume-assistant.toml` / fallback `Pravin`. Streams subprocess output, aborts on non-zero with clear "step X failed". |
+| `.resume-assistant.toml` added (gitignored) | Project-local defaults for `default_user`, `default_min_fit`, `default_llm_polish_above`. Loaded only by `run-pipeline.py`; existing scripts unchanged. |
+| `batch-pipeline.py` `--manifest` now optional | When omitted, auto-discovers the newest `batch_manifest_*.json` under `{User}/JobSearch/`. New `--user` flag required only in this auto-discovery path. Backward compatible. |
+| `scripts/sync-mirrors.py` added | Mirrors agent-agnostic shared content (`skills/`, `context/`, `instructions/`, `Users/`, `requirements.txt`) between `.github/` and `.claude/`. Newer-mtime wins. `--check` mode for CI. Excludes `__pycache__`, `*.pyc`, gitignored PII. |
+| `.claude/settings.json` PostToolUse hook | Runs `sync-mirrors.py --quiet` after every `Edit`/`Write`/`MultiEdit`. Drift between trees is now structurally prevented for shared content. |
+| File-sync policy revised | CLAUDE.md no longer mandates byte-identical mirrors. Each tree is adapted to its agent: `.github/copilot-instructions.md`, `.github/prompts/`, `.claude/commands/`, `.claude/settings.json` are agent-native and **not** mirrored. Skills, context, instructions, Users, requirements.txt are shared and synced. |
