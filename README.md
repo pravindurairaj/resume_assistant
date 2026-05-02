@@ -84,7 +84,7 @@ This script:
 
 > `setup-users.py` reuses extraction logic from `extract-resume.py` (DRY via `importlib`).
 
-### 5. Add your career profile
+### 4. Add your career profile
 
 Copy the template and fill in your details (this file is gitignored — it contains PII):
 
@@ -120,7 +120,7 @@ cp .claude/instructions/career-profile-template.instructions.md \
 
 Fill in: `{Full Name}`, `{Email}`, `{Phone}`, `{LinkedIn}`, `{Location}`, `Target Roles`, `Target Industries`.
 
-### 6. Add your master resume
+### 5. Add your master resume
 
 Place your full resume (all skills, full history) at:
 
@@ -214,7 +214,14 @@ resume-workspace/
 │   └── History/
 │       └── resumes_created.xlsx               # Application tracker
 │
-└── .venv/                                     # Python virtual environment (gitignored)
+├── run-pipeline.py                            # One-command pipeline: scrape → manifest → batch-tailor
+├── setup-users.py                             # Bootstrap users from *_Resume.docx in project root
+├── .resume-assistant.toml                     # Per-machine defaults (gitignored — created locally)
+│
+├── scripts/
+│   └── sync-mirrors.py                        # Sync shared content between .github/ and .claude/
+│
+└── resume_assistant/                          # Python virtual environment (gitignored)
 ```
 
 ---
@@ -325,6 +332,7 @@ python .github/skills/job-scraper/scripts/scrape-linkedin-jobs.py \
 | `-d / --date-posted` | `day` | `day`, `week`, or `month` |
 | `-m / --max-results` | `25` | Max results per keyword |
 | `-o / --output` | `{User}/JobSearch` | Output folder override |
+| `--skip-jd-scrape` | *(off)* | Fast title-only scan — skips JD fetch, caps Fit % at 40 |
 
 **Output:** `{User}/JobSearch/LinkedIn_Jobs_AllRoles_{YYYYMMDD_HHMM}.xlsx`
 
@@ -462,16 +470,53 @@ flowchart TD
 
 ---
 
+## One-Command Pipeline
+
+The fastest way to run the full pipeline — scrape jobs, build a manifest, and tailor resumes in one command:
+
+**Windows (PowerShell):**
+```powershell
+# Reads defaults from .resume-assistant.toml (user, min-fit, llm-polish-above)
+python run-pipeline.py
+
+# Overrides
+python run-pipeline.py --user Navya --min-fit 60
+python run-pipeline.py --skip-scrape --min-fit 75   # skip scrape, tailor from latest manifest
+```
+
+**macOS / Linux (bash):**
+```bash
+python run-pipeline.py
+python run-pipeline.py --user Navya --min-fit 60
+python run-pipeline.py --skip-scrape --min-fit 75
+```
+
+`run-pipeline.py` resolves `--user` from: CLI → `RESUME_USER` env var → `.resume-assistant.toml` → fallback `Pravin`. It streams subprocess output and aborts with a clear error on failure.
+
+**`.resume-assistant.toml`** (create locally — gitignored):
+
+```toml
+default_user = "Pravin"
+default_min_fit = 50
+default_llm_polish_above = 75
+```
+
+---
+
 ## Autonomous Batch Pipeline
 
-Process an entire job manifest without LLM approvals (~95% fewer tokens than manual batch):
+Run the pipeline steps individually for more control:
 
 **Windows (PowerShell):**
 ```powershell
 # Step 1: Generate manifest from latest scraped Excel
 python .github\skills\resume-tailor\scripts\batch-job-reader.py --user Pravin --min-fit 50
 
-# Step 2: Tailor all jobs autonomously (output: .docx per job, context .md, log entry)
+# Step 2: Tailor all jobs autonomously (--manifest is optional; auto-discovers newest if omitted)
+python .github\skills\resume-tailor\scripts\batch-pipeline.py `
+  --user Pravin --min-fit 50 --llm-polish-above 75
+
+# Or specify the manifest explicitly
 python .github\skills\resume-tailor\scripts\batch-pipeline.py `
   --manifest Pravin\JobSearch\batch_manifest_{ts}.json `
   --min-fit 50 --llm-polish-above 75
@@ -482,10 +527,9 @@ python .github\skills\resume-tailor\scripts\batch-pipeline.py `
 REM Step 1: Generate manifest from latest scraped Excel
 python .github\skills\resume-tailor\scripts\batch-job-reader.py --user Pravin --min-fit 50
 
-REM Step 2: Tailor all jobs autonomously (output: .docx per job, context .md, log entry)
+REM Step 2: Tailor all jobs autonomously
 python .github\skills\resume-tailor\scripts\batch-pipeline.py ^
-  --manifest Pravin\JobSearch\batch_manifest_{ts}.json ^
-  --min-fit 50 --llm-polish-above 75
+  --user Pravin --min-fit 50 --llm-polish-above 75
 ```
 
 **macOS / Linux (bash):**
@@ -493,17 +537,17 @@ python .github\skills\resume-tailor\scripts\batch-pipeline.py ^
 # Step 1: Generate manifest from latest scraped Excel
 python .github/skills/resume-tailor/scripts/batch-job-reader.py --user Pravin --min-fit 50
 
-# Step 2: Tailor all jobs autonomously (output: .docx per job, context .md, log entry)
+# Step 2: Tailor all jobs autonomously
 python .github/skills/resume-tailor/scripts/batch-pipeline.py \
-  --manifest Pravin/JobSearch/batch_manifest_{ts}.json \
-  --min-fit 50 --llm-polish-above 75
+  --user Pravin --min-fit 50 --llm-polish-above 75
 ```
 
 **batch-pipeline.py arguments:**
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `--manifest` | *(required)* | Path to manifest JSON |
+| `--manifest` | *(auto-discovered)* | Path to manifest JSON — if omitted, finds newest for `--user` |
+| `--user` | `Pravin` | User name — required when `--manifest` is omitted |
 | `--min-fit` | `0` | Skip jobs below this fit % |
 | `--max-bullets` | `10` | Max bullets for current role (Murex) |
 | `--max-older-bullets` | `4` | Max bullets for older roles |
@@ -559,6 +603,7 @@ python .github/skills/resume-tailor/scripts/tailor-resume.py \
 | File / Folder | Created by | Description |
 |---------------|-----------|-------------|
 | `{User}/JobSearch/LinkedIn_Jobs_AllRoles_{ts}.xlsx` | job-scraper | Scraped job listings with fit scores |
+| `{User}/JobSearch/jds/{job_id}.txt` | job-scraper / batch-job-reader | Cached JD text — reused on subsequent runs |
 | `{User}/JobSearch/batch_manifest_{ts}.json` | batch-job-reader | Batch input for autonomous pipeline |
 | `{User}/JobSearch/batch_results.json` | batch-pipeline | Per-run summary (jobs processed, skipped, errors) |
 | `{User}/JobSearch/archive/` | Manual / job-scraper | Previous job search results |
@@ -584,8 +629,12 @@ This workspace is optimised for Claude Code. Key workflows:
 # Scrape today's jobs
 /job-scraper Pravin
 
-# Full pipeline: scrape → batch → log
-@job-search-agent Pravin full
+# Full one-command pipeline: scrape → manifest → batch-tailor
+python run-pipeline.py --user Pravin --min-fit 50
+
+# Sync .github/ and .claude/ shared content manually
+python scripts/sync-mirrors.py --check   # report drift
+python scripts/sync-mirrors.py            # fix drift
 ```
 
 ### Working with Claude Code
