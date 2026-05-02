@@ -162,7 +162,7 @@ resume-workspace/
 ├── .github/                                   # GitHub Copilot configuration
 │   ├── copilot-instructions.md                # Global Copilot context (auto-loaded)
 │   ├── instructions/                          # Career profiles — GITIGNORED (PII, add locally)
-│   │   └── career-profile-template.instructions.md  # Starter template
+│   │   └── career-profile-template.instructions.md  # Starter template (committed)
 │   │
 │   ├── skills/
 │   │   ├── job-scraper/
@@ -187,6 +187,9 @@ resume-workspace/
 │   │
 │   ├── Users/                                 # Master resumes — GITIGNORED (PII, add locally)
 │   │   └── ExampleUser/                       # Template user folder (committed)
+│   │       ├── README.md                      # Onboarding instructions for new users
+│   │       └── companies/                     # Per-job context files — GITIGNORED
+│   │           └── README.md                  # Template showing expected file format
 │   │
 │   ├── agents/
 │   │   └── job-search.agent.md                # Full pipeline agent
@@ -206,13 +209,18 @@ resume-workspace/
 │   ├── architecture.mmd                       # Mermaid flowchart source
 │   └── resume_tailor.png                      # Architecture diagram
 │
-├── {UserName}/                                # Per-user output — GITIGNORED content
-│   ├── JobSearch/                             # Scraped job listings + batch manifests
-│   │   └── archive/                           # Previous searches
-│   ├── Resumes/                               # Tailored .docx resumes
-│   │   └── {Company}/
-│   └── History/
-│       └── resumes_created.xlsx               # Application tracker
+├── {UserName}/                                # Per-user output — folder structure committed, content GITIGNORED
+│   ├── JobSearch/                             # Scraped job listings + batch manifests (gitignored)
+│   │   ├── .gitkeep                           # Keeps folder in git
+│   │   ├── archive/                           # Previous searches (gitignored)
+│   │   │   └── .gitkeep
+│   │   └── jds/                              # Cached JD text files (gitignored)
+│   │       └── .gitkeep
+│   ├── Resumes/                               # Tailored .docx resumes (gitignored)
+│   │   ├── .gitkeep                           # Keeps folder in git
+│   │   └── {Company}/                         # One subfolder per tailored application
+│   └── History/                              # Application tracker (gitignored)
+│       └── .gitkeep                           # Keeps folder in git
 │
 ├── run-pipeline.py                            # One-command pipeline: scrape → manifest → batch-tailor
 ├── setup-users.py                             # Bootstrap users from *_Resume.docx in project root
@@ -600,16 +608,19 @@ python .github/skills/resume-tailor/scripts/tailor-resume.py \
 
 ## Output Files Reference
 
-| File / Folder | Created by | Description |
-|---------------|-----------|-------------|
-| `{User}/JobSearch/LinkedIn_Jobs_AllRoles_{ts}.xlsx` | job-scraper | Scraped job listings with fit scores |
-| `{User}/JobSearch/jds/{job_id}.txt` | job-scraper / batch-job-reader | Cached JD text — reused on subsequent runs |
-| `{User}/JobSearch/batch_manifest_{ts}.json` | batch-job-reader | Batch input for autonomous pipeline |
-| `{User}/JobSearch/batch_results.json` | batch-pipeline | Per-run summary (jobs processed, skipped, errors) |
-| `{User}/JobSearch/archive/` | Manual / job-scraper | Previous job search results |
-| `.github/Users/{User}/companies/{Company}.md` | tailor-resume | Per-job context: JD + keyword match report |
-| `{User}/Resumes/{Company}/{User}_Resume_{Company}.docx` | tailor-resume / batch-pipeline | Final formatted Word document |
-| `{User}/History/resumes_created.xlsx` | log-application | Log of all tailored applications |
+All output content is gitignored — only `.gitkeep` placeholders and `README.md` templates are committed to preserve folder structure.
+
+| File / Folder | Created by | Committed? | Description |
+|---------------|-----------|------------|-------------|
+| `{User}/JobSearch/LinkedIn_Jobs_AllRoles_{ts}.xlsx` | job-scraper | No | Scraped job listings with fit scores |
+| `{User}/JobSearch/jds/{job_id}.txt` | job-scraper / batch-job-reader | No | Cached JD text — reused on subsequent runs |
+| `{User}/JobSearch/batch_manifest_{ts}.json` | batch-job-reader | No | Batch input for autonomous pipeline |
+| `{User}/JobSearch/batch_results.json` | batch-pipeline | No | Per-run summary (jobs processed, skipped, errors) |
+| `{User}/JobSearch/archive/` | Manual / job-scraper | `.gitkeep` only | Previous job search results |
+| `.github/Users/{User}/companies/{Company}.md` | tailor-resume | No | Per-job context: JD + keyword match report |
+| `.github/Users/ExampleUser/companies/README.md` | — | Yes | Template showing companies file format |
+| `{User}/Resumes/{Company}/{User}_Resume_{Company}.docx` | tailor-resume / batch-pipeline | No | Final formatted Word document |
+| `{User}/History/resumes_created.xlsx` | log-application | No | Log of all tailored applications |
 
 ---
 
