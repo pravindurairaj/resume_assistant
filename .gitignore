@@ -44,20 +44,29 @@ build/
 
 # ── User output folders ─────────────────────────────────────
 # {UserName}/Resumes/, History/, JobSearch/ contain personal output.
-# Top-level user folders are kept (via .gitkeep), content excluded.
-Pravin/Resumes/
-Pravin/History/
-Navya/Resumes/
-Navya/History/
+# Ignore folder contents but preserve .gitkeep to keep folder structure in git.
+Pravin/Resumes/*
+Pravin/History/*
+Navya/Resumes/*
+Navya/History/*
+
+# Keep folder structure markers
+!Pravin/Resumes/.gitkeep
+!Pravin/History/.gitkeep
+!Navya/Resumes/.gitkeep
+!Navya/History/.gitkeep
 
 # ── Job search data ─────────────────────────────────────────
 # Scraped Excel files and batch manifests — user-specific
 */JobSearch/*.xlsx
 */JobSearch/*.json
-*/JobSearch/archive/
+*/JobSearch/archive/*
+*/JobSearch/jds/*
 
 # Keep JobSearch/ dir structure
 !*/JobSearch/.gitkeep
+!*/JobSearch/archive/.gitkeep
+!*/JobSearch/jds/.gitkeep
 
 # ── Temporary / scratch files ───────────────────────────────
 tmp*.docx
